@@ -4,8 +4,8 @@
   "description": "Wizard Farmers propose l'élevage et la livraison de poules bio à travers la ville, ainsi que la vente d'œufs frais. Vivez la magie d'une ferme enchantée avec des produits authentiques et naturels livrés directement chez vous. Découvrez la fraîcheur et la qualité à portée de main.",
   "start_url": "/?source=pwa",
   "display": "standalone",
-  "background_color": "#F8F4E3",
-  "theme_color": "#A8D0A1",
+  "background_color": "#263D2B",
+  "theme_color": "#6A8E6B",
   "icons": [
     {
       "src": "/assets/icons/icon-192x192.svg",
