@@ -1,0 +1,6 @@
+/* Import du style spécifique Focus */
+@import "./storytelling.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

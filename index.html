@@ -1,0 +1,1083 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wizard Farmers | La magie de la fraîcheur livrée</title><meta name="description" content="Wizard Farmers propose l&#39;élevage et la livraison de poules bio à travers la ville, ainsi que la vente d&#39;œufs frais. Vivez la magie d&#39;une ferme enchantée avec des produits authentiques et naturels livrés directement chez vous. Découvrez la fraîcheur et la qualité à portée de main."><link rel="canonical" href="/"><link rel="icon" href="/favicon.svg"><link rel="manifest" href="/manifest.json"><meta property="og:title" content="Wizard Farmers | La magie de la fraîcheur livrée"><meta property="og:description" content="Wizard Farmers propose l&#39;élevage et la livraison de poules bio à travers la ville, ainsi que la vente d&#39;œufs frais. Vivez la magie d&#39;une ferme enchantée avec des produits authentiques et naturels livrés directement chez vous. Découvrez la fraîcheur et la qualité à portée de main."><meta property="og:type" content="website"><meta property="og:url" content="/"><meta property="og:image" content=""><meta property="og:site_name" content="Wizard Farmers"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@400;700&family=Oswald:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><style id="zflex-theme-vars">:root {
+    
+    
+    --bg-color: #F8F4E3;
+  --text-color: #4A3C30;
+  --primary-color: #A8D0A1;
+  --secondary-color: #A67B5B;
+  --accent-color: #FFDD67;
+  --text-muted-color: #b2aa9b;
+  --card-bg-color: #FAF0E6;
+  --card-border-color: #e5dad0;
+  --input-bg-color: #fdf8f3;
+  --chat-response-bg-color: #faf7eb;
+  --primary-600: #8fc286;
+  --primary-700: #7cb871;
+  --secondary-600: #936c50;
+  --contrast-text-bg: 9.615617344591538;
+    
+
+    /* Variables Typo & Layout (Mapping) */
+    --heading-font: Inter, sans-serif;
+    --body-font: 'Inter', sans-serif;
+    --border-radius: 0.5rem;
+  }</style><link rel="stylesheet" href="/assets/app-C9zx4mvT.css"><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-functions-compat.js"></script><script id="firebase-config-data" type="application/json">{
+    "apiKey": "AIzaSyDBXhXyRBnSJsVn0CmZ35MQp-zT_e9RakQ",
+    "authDomain": "zflex-wizard.firebaseapp.com",
+    "projectId": "zflex-wizard",
+    "storageBucket": ""
+  }</script></head><body class="focus-theme antialiased flex flex-col min-h-screen" data-button-style="soft" data-button-radius="full"><div id="router-loader" class="fixed inset-0 z-[200] flex items-center justify-center bg-black/20 backdrop-blur-sm hidden"><div class="loader"><div class="face" style="color: var(--primary-color);"><div class="circle"></div></div><div class="face" style="color: var(--secondary-color);"><div class="circle"></div></div></div></div><div data-zflex-variant-container="header"><header class="header-main fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-transparent shadow-none bg-transparent" id="main-header" style=""><div class="container mx-auto px-6 h-20 flex items-center justify-between"><a href="/" class="zflex-link text-2xl font-bold tracking-tighter" style="font-family: var(--heading-font); color: var(--text-color)" data-zflex-bind="store_name" data-analytics-type="navigate_home" data-analytics-payload="{&quot;from&quot;:&quot;header_logo&quot;}">Wizard Farmers</a><nav class="hidden lg:flex space-x-8"><a href="/#reveal" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color);" data-zflex-show="navigation.showReveal"><span data-zflex-bind="labelReveal" data-zflex-id="navigation.labelReveal">La Solution </span></a><a href="/#features" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color);" data-zflex-show="navigation.showFeatures"><span data-zflex-bind="labelFeatures" data-zflex-id="navigation.labelFeatures">Avantages </span></a><a href="/#how-it-works" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color);" data-zflex-show="navigation.showHowItWorks"><span data-zflex-bind="labelHowItWorks" data-zflex-id="navigation.labelHowItWorks">Fonctionnement </span></a><a href="/#testimonials" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color);" data-zflex-show="navigation.showTestimonials"><span data-zflex-bind="labelTestimonials" data-zflex-id="navigation.labelTestimonials">Témoignages </span></a><a href="/#faq" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color);" data-zflex-show="navigation.showFaq"><span data-zflex-bind="labelFaq" data-zflex-id="navigation.labelFaq">FAQ </span></a><a href="/#final-cta" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color);" data-zflex-show="navigation.showFinalCta"><span data-zflex-bind="labelFinalCta" data-zflex-id="navigation.labelFinalCta">Commencer </span></a><a href="/catalog" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Catalogue</a></nav><div class="flex items-center space-x-6"><a id="cart-btn" href="/cart/" class="zflex-link relative hover:opacity-70 transition-opacity" style="color: var(--text-color)" aria-label="Voir le panier"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg> <span id="cart-count" class="cart-badge absolute -top-1 -right-1 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center" style="display: none; background-color: var(--primary-color)">0</span> </a><button id="mobile-menu-toggle" class="lg:hidden text-xl hover:opacity-70 transition-opacity" style="color: var(--text-color)"><i class="fa-solid fa-bars"></i></button></div></div><div id="mobile-menu" class="hidden lg:hidden absolute top-20 left-0 w-full min-h-[calc(100vh-5rem)] bg-white/95 backdrop-blur-xl border-t border-gray-100 p-8 shadow-2xl flex flex-col items-center justify-start pt-12 transition-all duration-300 transform origin-top" style="background-color: var(--bg-color); border-color: var(--card-border-color);"><nav class="flex flex-col space-y-6 text-center w-full max-w-xs"><a href="/#reveal" class="mobile-link text-xl font-bold tracking-tight hover:text-primary transition-colors py-2" style="color: var(--text-color)">La Solution</a> <a href="/#features" class="mobile-link text-xl font-bold tracking-tight hover:text-primary transition-colors py-2" style="color: var(--text-color)">Avantages</a> <a href="/#how-it-works" class="mobile-link text-xl font-bold tracking-tight hover:text-primary transition-colors py-2" style="color: var(--text-color)">Fonctionnement</a> <a href="/#testimonials" class="mobile-link text-xl font-bold tracking-tight hover:text-primary transition-colors py-2" style="color: var(--text-color)">Témoignages</a> <a href="/#faq" class="mobile-link text-xl font-bold tracking-tight hover:text-primary transition-colors py-2" style="color: var(--text-color)">FAQ</a> <a href="/#final-cta" class="mobile-link text-xl font-bold tracking-tight hover:text-primary transition-colors py-2" style="color: var(--text-color)">Commencer</a></nav></div></header></div><template data-zflex-variant="header.solid"><header class="header-main fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b shadow-sm backdrop-blur-md" style="background-color: var(--bg-color); border-color: var(--card-border-color);"><div class="container mx-auto px-6 h-20 flex items-center justify-between"><a href="/" class="zflex-link text-2xl font-bold tracking-tighter" style="font-family: var(--heading-font); color: var(--text-color)" data-zflex-bind="store_name">FOCUS.</a><nav class="hidden lg:flex space-x-8"><a href="/#reveal" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">La Solution</a> <a href="/#features" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Avantages</a> <a href="/#how-it-works" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Fonctionnement</a> <a href="/#testimonials" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Témoignages</a> <a href="/#faq" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">FAQ</a> <a href="/#final-cta" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Commencer</a></nav><div class="flex items-center space-x-6"><a href="/cart/" class="zflex-link relative hover:opacity-70 transition-opacity" style="color: var(--text-color)"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg> <span class="cart-badge absolute -top-1 -right-1 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center" style="display: none; background-color: var(--primary-color)">0</span></a></div></div></header></template><template data-zflex-variant="header.transparent"><header class="header-main fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-transparent shadow-none bg-transparent"><div class="container mx-auto px-6 h-20 flex items-center justify-between"><a href="/" class="zflex-link text-2xl font-bold tracking-tighter" style="font-family: var(--heading-font); color: var(--text-color)" data-zflex-bind="store_name">FOCUS.</a><nav class="hidden lg:flex space-x-8"><a href="/#reveal" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">La Solution</a> <a href="/#features" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Avantages</a> <a href="/#how-it-works" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Fonctionnement</a> <a href="/#testimonials" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Témoignages</a> <a href="/#faq" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">FAQ</a> <a href="/#final-cta" class="zflex-link text-sm font-medium hover:opacity-70 transition-opacity" style="color: var(--text-color)">Commencer</a></nav><div class="flex items-center space-x-6"><a href="/cart/" class="zflex-link relative hover:opacity-70 transition-opacity" style="color: var(--text-color)"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg> <span class="cart-badge absolute -top-1 -right-1 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center" style="display: none; background-color: var(--primary-color)">0</span></a></div></div></header></template><div class="h-20"></div><style>html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+    scroll-margin-top: 85px;
+  }
+  
+  /* Mobile Menu Transitions */
+  #mobile-menu {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: top;
+  }
+  #mobile-menu.hidden {
+    opacity: 0;
+    transform: scaleY(0.95);
+    pointer-events: none;
+    display: block !important;
+    visibility: hidden;
+  }
+  #mobile-menu:not(.hidden) {
+    opacity: 1;
+    transform: scaleY(1);
+    visibility: visible;
+  }</style><script>(function() {
+    // Dynamic Scroll Logic here...
+    // Included in main app usually, but kept for fallback
+  })();</script><div id="progress-bar" class="progress-bar"></div><main id="app-content" class="flex-grow" data-page-title="Wizard Farmers | La magie de la fraîcheur livrée"><main data-zflex-page-type="home" class="focus-story"><script class="zflex-fragment-data" type="application/json">{"page":{"url":"/"},"storeId":"x2zpqwB0UiBTph2KFD4O","theme":{"themeId":"focus","headerVariant":"transparent","productCardVariant":"classic","settings":{"palette":{"background":"#F8F4E3","text":"#4A3C30","primary":"#A8D0A1","secondary":"#A67B5B","accent":"#FFDD67","cardBackground":"#FAF0E6"},"homePageSections":[],"buttons":{"style":"solid","radius":"md"},"header":{"style":"solid"},"typography":{"headingFont":"Inter"},"layout":{"borderRadius":"0.5rem"},"hero":{"headline":"Votre Titre Principal","subheadline":"Une accroche percutante pour votre produit.","image":"","videoUrl":"","ctaText":"Commander","ctaLink":"#buy"},"painPoints":{"title":"Problématique Client"},"painPoints.items":[{"icon":"fas fa-exclamation-circle","text":"Problème courant n°1"},{"icon":"fas fa-times","text":"Problème courant n°2"},{"icon":"fas fa-frown","text":"Problème courant n°3"}],"productReveal":{"imagePosition":"right","badge":"La Révolution","title":"La Solution Ultime","description":"Décrivez comment votre produit résout les problèmes mentionnés ci-dessus.","image":"","btnText":"En Savoir Plus","btnLink":"#features"},"features":{"title":"Pourquoi choisir ce produit ?","subtitle":"Mettez en avant les caractéristiques techniques ou les avantages clés."},"features.items":[{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 1"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 2"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 3"}],"testimonials":{"title":"Ils nous adorent","subtitle":"Ce que nos clients disent de nous.","source":"Avis certifiés"},"testimonials.items":[{"author":"Client Satisfait","text":"Un produit exceptionnel qui a changé mon quotidien."},{"author":"Client Fidèle","text":"Le service client est irréprochable et la qualité au rendez-vous."},{"author":"Nouvel Utilisateur","text":"Livraison rapide et produit conforme à la description."}],"howItWorks":{"title":"Comment ça marche ?","subtitle":"Les étapes clés pour profiter de votre produit.","showIcons":false},"howItWorks.steps":[{"icon":"fas fa-star","title":"Étape 1","desc":"Description de la première étape du processus."},{"icon":"fas fa-star","title":"Étape 2","desc":"Description de la deuxième étape."},{"icon":"fas fa-star","title":"Étape 3","desc":"Description de l'étape finale."}],"faq":{"accordionMode":true,"title":"FAQ","subtitle":"Tout ce que vous devez savoir."},"faq.items":[{"question":"Question Fréquente 1","answer":"Réponse détaillée à la question posée."},{"question":"Question Fréquente 2","answer":"Explication sur la politique de retour ou de garantie."},{"question":"Question Fréquente 3","answer":"Information utile sur l'utilisation du produit."}],"finalCta":{"title":"Prêt à commencer ?","subtitle":"Ne laissez pas passer cette opportunité.","btnText":"Commander Maintenant","btnLink":"#buy","showGuarantee":true,"guaranteeText":"Satisfait ou Remboursé","showPayments":false,"productImage":""},"navigation":{"showReveal":true,"labelReveal":"La Solution","showFeatures":true,"labelFeatures":"Avantages","showHowItWorks":true,"labelHowItWorks":"Fonctionnement","showTestimonials":true,"labelTestimonials":"Témoignages","showFaq":true,"labelFaq":"FAQ","showFinalCta":true,"labelFinalCta":"Commencer"},"computedPalette":{"background":"#F8F4E3","text":"#4A3C30","primary":"#A8D0A1","secondary":"#A67B5B","accent":"#FFDD67","cardBackground":"#FAF0E6","textMuted":"#b2aa9b","cardBorder":"#e5dad0","inputBackground":"#fdf8f3","chatResponseBackground":"#faf7eb","primary600":"#8fc286","primary700":"#7cb871","secondary600":"#936c50"},"computedCssVars":"--bg-color: #F8F4E3;\n  --text-color: #4A3C30;\n  --primary-color: #A8D0A1;\n  --secondary-color: #A67B5B;\n  --accent-color: #FFDD67;\n  --text-muted-color: #b2aa9b;\n  --card-bg-color: #FAF0E6;\n  --card-border-color: #e5dad0;\n  --input-bg-color: #fdf8f3;\n  --chat-response-bg-color: #faf7eb;\n  --primary-600: #8fc286;\n  --primary-700: #7cb871;\n  --secondary-600: #936c50;\n  --contrast-text-bg: 9.615617344591538;"},"version":"1.2.0","manifestUpdatedAt":{"_seconds":1768840091,"_nanoseconds":245000000},"manifest":{"settingsSchema":[{"label":"Story Arc (Structure)","type":"group","fields":[{"itemFields":[{"options":[{"label":"Hero (Intro)","value":"hero"},{"label":"Le Problème (Pain Points)","value":"painPoints"},{"label":"La Solution (Reveal)","value":"productReveal"},{"label":"Fonctionnalités","value":"features"},{"label":"Comment ça marche","value":"howItWorks"},{"label":"Avis Clients","value":"testimonials"},{"label":"FAQ","value":"faq"},{"label":"Final CTA (Closing)","value":"finalCta"}],"id":"type","label":"Type de Section","type":"select"}],"id":"homePageSections","label":"Ordre des Sections","type":"repeater"}]},{"label":"0. Global UI (Style)","type":"group","fields":[{"default":"solid","options":[{"label":"Solide (Defaut)","value":"solid"},{"label":"Contour (Outline)","value":"outline"},{"label":"Soft (Pastel)","value":"soft"}],"id":"buttons.style","label":"Style des Boutons","type":"select"},{"default":"md","options":[{"label":"Carré (0px)","value":"none"},{"label":"Léger (4px)","value":"sm"},{"label":"Standard (8px)","value":"md"},{"label":"Pilule (Full)","value":"full"}],"id":"buttons.radius","label":"Arrondi des Boutons","type":"select"},{"default":"solid","id":"header.style","label":"Style de l'En-tête","variantId":"header","type":"variant_selector"},{"default":"Inter","options":[{"label":"Inter (SaaS)","value":"Inter"},{"label":"Playfair (Luxe)","value":"Playfair Display"},{"label":"Montserrat (Bold)","value":"Montserrat"},{"label":"Oswald (Street)","value":"Oswald"}],"id":"typography.headingFont","label":"Police Titres","type":"select"},{"default":"0.5rem","options":[{"label":"Carré (0px)","value":"0px"},{"label":"Soft (8px)","value":"0.5rem"},{"label":"Round (16px)","value":"1rem"},{"label":"Extra Round (32px)","value":"2rem"}],"id":"layout.borderRadius","label":"Arrondi des cartes","type":"select"}]},{"label":"1. Hero (L'Accroche)","type":"group","fields":[{"id":"hero.style","label":"Style du Hero","variantId":"hero","type":"variant_selector"},{"default":"Votre Titre Principal","id":"hero.headline","label":"Titre Principal","type":"text"},{"default":"Une accroche percutante pour votre produit.","id":"hero.subheadline","label":"Sous-titre","type":"textarea"},{"default":"","id":"hero.image","label":"Image Hero","type":"image"},{"default":"","id":"hero.videoUrl","label":"Vidéo Background (Optionnel)","type":"text"},{"default":"Commander","id":"hero.ctaText","label":"Texte Bouton","type":"text"},{"default":"#buy","id":"hero.ctaLink","label":"Lien Bouton","type":"text"}]},{"label":"2. Pain Points (Le Problème)","type":"group","fields":[{"default":"Problématique Client","id":"painPoints.title","label":"Titre","type":"text"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"icon":"fas fa-exclamation-circle","text":"Problème courant n°1"},{"icon":"fas fa-times","text":"Problème courant n°2"},{"icon":"fas fa-frown","text":"Problème courant n°3"}],"itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}],"id":"painPoints.items","label":"Liste des problèmes","type":"repeater"}]},{"label":"3. Product Reveal (La Solution)","type":"group","fields":[{"id":"productReveal.style","label":"Style de Révélation","variantId":"productReveal","type":"variant_selector"},{"id":"productReveal.productId","label":"Produit à mettre en avant","type":"product_selector"},{"default":"right","options":[{"label":"Droite (Standard)","value":"right"},{"label":"Gauche (Alternatif)","value":"left"}],"id":"productReveal.imagePosition","label":"Position Image (Split/Overlap uniquement)","type":"select"},{"default":"La Révolution","id":"productReveal.badge","label":"Badge","type":"text"},{"default":"La Solution Ultime","id":"productReveal.title","label":"Titre","type":"text"},{"default":"Décrivez comment votre produit résout les problèmes mentionnés ci-dessus.","id":"productReveal.description","label":"Description","type":"textarea"},{"default":"","id":"productReveal.image","label":"Image Produit (Détourée)","type":"image"},{"default":"En Savoir Plus","id":"productReveal.btnText","label":"Texte Bouton (Optionnel)","type":"text"},{"default":"#features","id":"productReveal.btnLink","label":"Lien Bouton","type":"text"}]},{"label":"4. Fonctionnalités & Bénéfices","type":"group","fields":[{"id":"features.style","label":"Style d'affichage","variantId":"features","type":"variant_selector"},{"default":"Pourquoi choisir ce produit ?","id":"features.title","label":"Titre","type":"text"},{"default":"Mettez en avant les caractéristiques techniques ou les avantages clés.","id":"features.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 1"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 2"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 3"}],"itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}],"id":"features.items","label":"Liste des fonctionnalités","type":"repeater"}]},{"label":"5. Preuve Sociale (Avis)","type":"group","fields":[{"id":"testimonials.style","label":"Style d'affichage","variantId":"testimonials","type":"variant_selector"},{"default":"Ils nous adorent","id":"testimonials.title","label":"Titre de section","type":"text"},{"default":"Ce que nos clients disent de nous.","id":"testimonials.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"author":"Client Satisfait","text":"Un produit exceptionnel qui a changé mon quotidien."},{"author":"Client Fidèle","text":"Le service client est irréprochable et la qualité au rendez-vous."},{"author":"Nouvel Utilisateur","text":"Livraison rapide et produit conforme à la description."}],"itemFields":[{"id":"author","label":"Auteur","type":"text"},{"id":"text","label":"Avis","type":"textarea"}],"id":"testimonials.items","label":"Avis Clients","type":"repeater"},{"default":"Avis certifiés","id":"testimonials.source","label":"Source (ex: Trustpilot)","type":"text"}]},{"label":"6. How It Works (Timeline)","type":"group","fields":[{"id":"howItWorks.style","label":"Style","variantId":"howItWorks","type":"variant_selector"},{"default":"Comment ça marche ?","id":"howItWorks.title","label":"Titre","type":"text"},{"default":"Les étapes clés pour profiter de votre produit.","id":"howItWorks.subtitle","label":"Sous-titre","type":"text"},{"default":false,"id":"howItWorks.showIcons","label":"Utiliser des icônes au lieu de chiffres ?","type":"boolean"},{"default":[{"icon":"fas fa-star","title":"Étape 1","desc":"Description de la première étape du processus."},{"icon":"fas fa-star","title":"Étape 2","desc":"Description de la deuxième étape."},{"icon":"fas fa-star","title":"Étape 3","desc":"Description de l'étape finale."}],"itemFields":[{"id":"title","label":"Titre étape","type":"text"},{"id":"desc","label":"Description","type":"textarea"},{"id":"icon","label":"Icône SVG/FontAwesome (Si mode icône activé)","type":"textarea"}],"id":"howItWorks.steps","label":"Étapes","type":"repeater"}]},{"label":"7. FAQ","type":"group","fields":[{"id":"faq.style","label":"Style FAQ","variantId":"faq","type":"variant_selector"},{"default":true,"id":"faq.accordionMode","label":"Mode Accordéon (Ferme les autres auto)","type":"boolean"},{"default":"FAQ","id":"faq.title","label":"Titre","type":"text"},{"default":"Tout ce que vous devez savoir.","id":"faq.subtitle","label":"Sous-titre","type":"text"},{"default":[{"question":"Question Fréquente 1","answer":"Réponse détaillée à la question posée."},{"question":"Question Fréquente 2","answer":"Explication sur la politique de retour ou de garantie."},{"question":"Question Fréquente 3","answer":"Information utile sur l'utilisation du produit."}],"itemFields":[{"id":"question","label":"Question","type":"text"},{"id":"answer","label":"Réponse","type":"textarea"}],"id":"faq.items","label":"Questions","type":"repeater"}]},{"label":"8. Final CTA (Le Closing)","type":"group","fields":[{"id":"finalCta.style","label":"Style CTA","variantId":"finalCta","type":"variant_selector"},{"id":"finalCta.bgImage","label":"Image de fond (Optionnel)","type":"image"},{"default":"Prêt à commencer ?","id":"finalCta.title","label":"Titre","type":"text"},{"default":"Ne laissez pas passer cette opportunité.","id":"finalCta.subtitle","label":"Sous-titre","type":"textarea"},{"default":"Commander Maintenant","id":"finalCta.btnText","label":"Texte Bouton","type":"text"},{"default":"#buy","id":"finalCta.btnLink","label":"Lien Bouton","type":"text"},{"default":true,"id":"finalCta.showGuarantee","label":"Afficher Garantie","type":"boolean"},{"default":"Satisfait ou Remboursé","id":"finalCta.guaranteeText","label":"Texte Garantie","type":"text"},{"default":false,"id":"finalCta.showPayments","label":"Afficher Logos Paiement","type":"boolean"},{"default":"","id":"finalCta.productImage","label":"Image Produit (Pour style Split)","type":"image"}]},{"label":"9. Menu de Navigation (Ancres)","type":"group","fields":[{"default":true,"id":"navigation.showReveal","label":"Afficher 'La Solution'","type":"boolean"},{"default":"La Solution","id":"navigation.labelReveal","label":"Libellé 'La Solution'","type":"text"},{"default":true,"id":"navigation.showFeatures","label":"Afficher 'Avantages'","type":"boolean"},{"default":"Avantages","id":"navigation.labelFeatures","label":"Libellé 'Avantages'","type":"text"},{"default":true,"id":"navigation.showHowItWorks","label":"Afficher 'Fonctionnement'","type":"boolean"},{"default":"Fonctionnement","id":"navigation.labelHowItWorks","label":"Libellé 'Fonctionnement'","type":"text"},{"default":true,"id":"navigation.showTestimonials","label":"Afficher 'Témoignages'","type":"boolean"},{"default":"Témoignages","id":"navigation.labelTestimonials","label":"Libellé 'Témoignages'","type":"text"},{"default":true,"id":"navigation.showFaq","label":"Afficher 'FAQ'","type":"boolean"},{"default":"FAQ","id":"navigation.labelFaq","label":"Libellé 'FAQ'","type":"text"},{"default":true,"id":"navigation.showFinalCta","label":"Afficher 'Commencer'","type":"boolean"},{"default":"Commencer","id":"navigation.labelFinalCta","label":"Libellé 'Commencer'","type":"text"}]},{"label":"Palette & Branding","type":"group","fields":[{"default":"#000000","id":"palette.primary","label":"Primaire (Brand)","type":"color"},{"default":"#f3f4f6","id":"palette.secondary","label":"Secondaire","type":"color"},{"default":"#3b82f6","id":"palette.accent","label":"Accent (Highlights)","type":"color"},{"default":"#ffffff","id":"palette.background","label":"Fond Page","type":"color"},{"default":"#1f2937","id":"palette.text","label":"Texte Principal","type":"color"},{"default":"#ffffff","id":"palette.cardBackground","label":"Fond Cartes","type":"color"}]}],"author":"zFlex Team","name":"Focus","magicSuggestions":[{"label":"🎬 Impact Cinéma","prompt":"Capte l'attention dès la première seconde avec une présentation plein écran immersive et un message fort qui plonge mes visiteurs dans l'univers de ma marque."},{"label":"🤝 Preuve Sociale","prompt":"Entoure mon produit de visages et d'avis clients convaincants disposés de manière dynamique pour montrer que ma communauté m'adore."},{"label":"🌙 Nuit Étoilée","prompt":"Transforme ma boutique en un écrin de luxe : bascule sur un thème sombre et élégant qui fait briller mon produit comme s'il était sous les projecteurs."},{"label":"� Storyline Parfaite","prompt":"Raconte mon aventure dans le bon ordre : commence par le problème que je résous, montre ma solution révolutionnaire et termine par mes plus grands avantages."},{"label":"🚀 Vente Flash","prompt":"Crée un sentiment d'urgence irrésistible avec un appel à l'action flottant en fin de page et explique mon processus en quelques étapes simples et graphiques."}],"description":"Un produit. Une histoire. Une conversion. Le template ultime pour le storytelling immersif. Le theme supporte aussi le multiproduct avec son catalogue integre","variants":{"features":[{"description":"Alternance texte/image pour rythmer la lecture.","id":"zigzag","label":"Zig-Zag Story"},{"description":"Vue d'ensemble rapide des points forts.","id":"cards","label":"Grille d'Avantages"},{"description":"Idéal pour les spécifications techniques.","id":"list","label":"Liste Détaillée"}],"testimonials":[{"description":"Défilement horizontal des avis.","id":"carousel","label":"Carrousel Classique"},{"description":"Mosaïque d'avis pour une preuve sociale massive.","id":"grid","label":"Wall of Love (Grille)"},{"description":"Mise en avant d'un témoignage clé ou d'un ambassadeur.","id":"spotlight","label":"Spotlight (Citation unique)"}],"howItWorks":[{"description":"Parcours séquentiel avec ligne directrice (1->2->3).","id":"timeline","label":"Timeline Connectée"},{"description":"Étapes affichées sous forme de grille modulaire.","id":"cards","label":"Cartes Indépendantes"}],"productReveal":[{"description":"Mise en lumière dramatique, idéal pour les lancements.","id":"spotlight","label":"Spotlight (Central)"},{"description":"Image et texte se répondent pour expliquer le produit.","id":"split","label":"Split Story (Côté à Côté)"},{"description":"Design moderne avec chevauchement pour un effet premium.","id":"overlap","label":"Overlap (Profondeur 3D)"}],"faq":[{"description":"Lignes épurées, style éditorial.","id":"simple","label":"Liste Minimaliste"},{"description":"Chaque question est encapsulée (Standard SaaS).","id":"boxed","label":"Boxed (Cartes)"},{"description":"Double colonne pour les FAQ volumineuses.","id":"grid","label":"Grille Dense"}],"header":[{"description":"Fond opaque avec flou de précision dès le chargement.","id":"solid","label":"Fixe (Solide)"},{"description":"Fusionne avec le Hero au repos, devient solide au scroll.","id":"transparent","label":"Transparent (Auto)"}],"hero":[{"description":"Immersion totale avec arrière-plan média plein écran.","id":"cinematic","label":"Cinématique (Vidéo/Image Full)"},{"description":"Équilibre parfait entre visuel produit et accroche textuelle.","id":"split","label":"Split Screen"},{"description":"Focus absolu sur la typographie et le message.","id":"minimal","label":"Minimaliste"}],"finalCta":[{"description":"Juste l'essentiel pour closer.","id":"minimal","label":"Minimaliste Centré"},{"description":"Rappel du produit à côté de l'appel à l'action.","id":"split","label":"Split Visuel"},{"description":"Effet 'Pop-up' intégré pour une attention maximale.","id":"floating","label":"Carte Flottante"}]},"version":"1.2.0"},"variants":{"features":[{"description":"Alternance texte/image pour rythmer la lecture.","id":"zigzag","label":"Zig-Zag Story"},{"description":"Vue d'ensemble rapide des points forts.","id":"cards","label":"Grille d'Avantages"},{"description":"Idéal pour les spécifications techniques.","id":"list","label":"Liste Détaillée"}],"testimonials":[{"description":"Défilement horizontal des avis.","id":"carousel","label":"Carrousel Classique"},{"description":"Mosaïque d'avis pour une preuve sociale massive.","id":"grid","label":"Wall of Love (Grille)"},{"description":"Mise en avant d'un témoignage clé ou d'un ambassadeur.","id":"spotlight","label":"Spotlight (Citation unique)"}],"howItWorks":[{"description":"Parcours séquentiel avec ligne directrice (1->2->3).","id":"timeline","label":"Timeline Connectée"},{"description":"Étapes affichées sous forme de grille modulaire.","id":"cards","label":"Cartes Indépendantes"}],"productReveal":[{"description":"Mise en lumière dramatique, idéal pour les lancements.","id":"spotlight","label":"Spotlight (Central)"},{"description":"Image et texte se répondent pour expliquer le produit.","id":"split","label":"Split Story (Côté à Côté)"},{"description":"Design moderne avec chevauchement pour un effet premium.","id":"overlap","label":"Overlap (Profondeur 3D)"}],"faq":[{"description":"Lignes épurées, style éditorial.","id":"simple","label":"Liste Minimaliste"},{"description":"Chaque question est encapsulée (Standard SaaS).","id":"boxed","label":"Boxed (Cartes)"},{"description":"Double colonne pour les FAQ volumineuses.","id":"grid","label":"Grille Dense"}],"header":[{"description":"Fond opaque avec flou de précision dès le chargement.","id":"solid","label":"Fixe (Solide)"},{"description":"Fusionne avec le Hero au repos, devient solide au scroll.","id":"transparent","label":"Transparent (Auto)"}],"hero":[{"description":"Immersion totale avec arrière-plan média plein écran.","id":"cinematic","label":"Cinématique (Vidéo/Image Full)"},{"description":"Équilibre parfait entre visuel produit et accroche textuelle.","id":"split","label":"Split Screen"},{"description":"Focus absolu sur la typographie et le message.","id":"minimal","label":"Minimaliste"}],"finalCta":[{"description":"Juste l'essentiel pour closer.","id":"minimal","label":"Minimaliste Centré"},{"description":"Rappel du produit à côté de l'appel à l'action.","id":"split","label":"Split Visuel"},{"description":"Effet 'Pop-up' intégré pour une attention maximale.","id":"floating","label":"Carte Flottante"}]},"settingsSchema":[{"label":"Story Arc (Structure)","type":"group","fields":[{"itemFields":[{"options":[{"label":"Hero (Intro)","value":"hero"},{"label":"Le Problème (Pain Points)","value":"painPoints"},{"label":"La Solution (Reveal)","value":"productReveal"},{"label":"Fonctionnalités","value":"features"},{"label":"Comment ça marche","value":"howItWorks"},{"label":"Avis Clients","value":"testimonials"},{"label":"FAQ","value":"faq"},{"label":"Final CTA (Closing)","value":"finalCta"}],"id":"type","label":"Type de Section","type":"select"}],"id":"homePageSections","label":"Ordre des Sections","type":"repeater"}]},{"label":"0. Global UI (Style)","type":"group","fields":[{"default":"solid","options":[{"label":"Solide (Defaut)","value":"solid"},{"label":"Contour (Outline)","value":"outline"},{"label":"Soft (Pastel)","value":"soft"}],"id":"buttons.style","label":"Style des Boutons","type":"select"},{"default":"md","options":[{"label":"Carré (0px)","value":"none"},{"label":"Léger (4px)","value":"sm"},{"label":"Standard (8px)","value":"md"},{"label":"Pilule (Full)","value":"full"}],"id":"buttons.radius","label":"Arrondi des Boutons","type":"select"},{"default":"solid","id":"header.style","label":"Style de l'En-tête","variantId":"header","type":"variant_selector"},{"default":"Inter","options":[{"label":"Inter (SaaS)","value":"Inter"},{"label":"Playfair (Luxe)","value":"Playfair Display"},{"label":"Montserrat (Bold)","value":"Montserrat"},{"label":"Oswald (Street)","value":"Oswald"}],"id":"typography.headingFont","label":"Police Titres","type":"select"},{"default":"0.5rem","options":[{"label":"Carré (0px)","value":"0px"},{"label":"Soft (8px)","value":"0.5rem"},{"label":"Round (16px)","value":"1rem"},{"label":"Extra Round (32px)","value":"2rem"}],"id":"layout.borderRadius","label":"Arrondi des cartes","type":"select"}]},{"label":"1. Hero (L'Accroche)","type":"group","fields":[{"id":"hero.style","label":"Style du Hero","variantId":"hero","type":"variant_selector"},{"default":"Votre Titre Principal","id":"hero.headline","label":"Titre Principal","type":"text"},{"default":"Une accroche percutante pour votre produit.","id":"hero.subheadline","label":"Sous-titre","type":"textarea"},{"default":"","id":"hero.image","label":"Image Hero","type":"image"},{"default":"","id":"hero.videoUrl","label":"Vidéo Background (Optionnel)","type":"text"},{"default":"Commander","id":"hero.ctaText","label":"Texte Bouton","type":"text"},{"default":"#buy","id":"hero.ctaLink","label":"Lien Bouton","type":"text"}]},{"label":"2. Pain Points (Le Problème)","type":"group","fields":[{"default":"Problématique Client","id":"painPoints.title","label":"Titre","type":"text"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"icon":"fas fa-exclamation-circle","text":"Problème courant n°1"},{"icon":"fas fa-times","text":"Problème courant n°2"},{"icon":"fas fa-frown","text":"Problème courant n°3"}],"itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}],"id":"painPoints.items","label":"Liste des problèmes","type":"repeater"}]},{"label":"3. Product Reveal (La Solution)","type":"group","fields":[{"id":"productReveal.style","label":"Style de Révélation","variantId":"productReveal","type":"variant_selector"},{"id":"productReveal.productId","label":"Produit à mettre en avant","type":"product_selector"},{"default":"right","options":[{"label":"Droite (Standard)","value":"right"},{"label":"Gauche (Alternatif)","value":"left"}],"id":"productReveal.imagePosition","label":"Position Image (Split/Overlap uniquement)","type":"select"},{"default":"La Révolution","id":"productReveal.badge","label":"Badge","type":"text"},{"default":"La Solution Ultime","id":"productReveal.title","label":"Titre","type":"text"},{"default":"Décrivez comment votre produit résout les problèmes mentionnés ci-dessus.","id":"productReveal.description","label":"Description","type":"textarea"},{"default":"","id":"productReveal.image","label":"Image Produit (Détourée)","type":"image"},{"default":"En Savoir Plus","id":"productReveal.btnText","label":"Texte Bouton (Optionnel)","type":"text"},{"default":"#features","id":"productReveal.btnLink","label":"Lien Bouton","type":"text"}]},{"label":"4. Fonctionnalités & Bénéfices","type":"group","fields":[{"id":"features.style","label":"Style d'affichage","variantId":"features","type":"variant_selector"},{"default":"Pourquoi choisir ce produit ?","id":"features.title","label":"Titre","type":"text"},{"default":"Mettez en avant les caractéristiques techniques ou les avantages clés.","id":"features.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 1"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 2"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 3"}],"itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}],"id":"features.items","label":"Liste des fonctionnalités","type":"repeater"}]},{"label":"5. Preuve Sociale (Avis)","type":"group","fields":[{"id":"testimonials.style","label":"Style d'affichage","variantId":"testimonials","type":"variant_selector"},{"default":"Ils nous adorent","id":"testimonials.title","label":"Titre de section","type":"text"},{"default":"Ce que nos clients disent de nous.","id":"testimonials.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"author":"Client Satisfait","text":"Un produit exceptionnel qui a changé mon quotidien."},{"author":"Client Fidèle","text":"Le service client est irréprochable et la qualité au rendez-vous."},{"author":"Nouvel Utilisateur","text":"Livraison rapide et produit conforme à la description."}],"itemFields":[{"id":"author","label":"Auteur","type":"text"},{"id":"text","label":"Avis","type":"textarea"}],"id":"testimonials.items","label":"Avis Clients","type":"repeater"},{"default":"Avis certifiés","id":"testimonials.source","label":"Source (ex: Trustpilot)","type":"text"}]},{"label":"6. How It Works (Timeline)","type":"group","fields":[{"id":"howItWorks.style","label":"Style","variantId":"howItWorks","type":"variant_selector"},{"default":"Comment ça marche ?","id":"howItWorks.title","label":"Titre","type":"text"},{"default":"Les étapes clés pour profiter de votre produit.","id":"howItWorks.subtitle","label":"Sous-titre","type":"text"},{"default":false,"id":"howItWorks.showIcons","label":"Utiliser des icônes au lieu de chiffres ?","type":"boolean"},{"default":[{"icon":"fas fa-star","title":"Étape 1","desc":"Description de la première étape du processus."},{"icon":"fas fa-star","title":"Étape 2","desc":"Description de la deuxième étape."},{"icon":"fas fa-star","title":"Étape 3","desc":"Description de l'étape finale."}],"itemFields":[{"id":"title","label":"Titre étape","type":"text"},{"id":"desc","label":"Description","type":"textarea"},{"id":"icon","label":"Icône SVG/FontAwesome (Si mode icône activé)","type":"textarea"}],"id":"howItWorks.steps","label":"Étapes","type":"repeater"}]},{"label":"7. FAQ","type":"group","fields":[{"id":"faq.style","label":"Style FAQ","variantId":"faq","type":"variant_selector"},{"default":true,"id":"faq.accordionMode","label":"Mode Accordéon (Ferme les autres auto)","type":"boolean"},{"default":"FAQ","id":"faq.title","label":"Titre","type":"text"},{"default":"Tout ce que vous devez savoir.","id":"faq.subtitle","label":"Sous-titre","type":"text"},{"default":[{"question":"Question Fréquente 1","answer":"Réponse détaillée à la question posée."},{"question":"Question Fréquente 2","answer":"Explication sur la politique de retour ou de garantie."},{"question":"Question Fréquente 3","answer":"Information utile sur l'utilisation du produit."}],"itemFields":[{"id":"question","label":"Question","type":"text"},{"id":"answer","label":"Réponse","type":"textarea"}],"id":"faq.items","label":"Questions","type":"repeater"}]},{"label":"8. Final CTA (Le Closing)","type":"group","fields":[{"id":"finalCta.style","label":"Style CTA","variantId":"finalCta","type":"variant_selector"},{"id":"finalCta.bgImage","label":"Image de fond (Optionnel)","type":"image"},{"default":"Prêt à commencer ?","id":"finalCta.title","label":"Titre","type":"text"},{"default":"Ne laissez pas passer cette opportunité.","id":"finalCta.subtitle","label":"Sous-titre","type":"textarea"},{"default":"Commander Maintenant","id":"finalCta.btnText","label":"Texte Bouton","type":"text"},{"default":"#buy","id":"finalCta.btnLink","label":"Lien Bouton","type":"text"},{"default":true,"id":"finalCta.showGuarantee","label":"Afficher Garantie","type":"boolean"},{"default":"Satisfait ou Remboursé","id":"finalCta.guaranteeText","label":"Texte Garantie","type":"text"},{"default":false,"id":"finalCta.showPayments","label":"Afficher Logos Paiement","type":"boolean"},{"default":"","id":"finalCta.productImage","label":"Image Produit (Pour style Split)","type":"image"}]},{"label":"9. Menu de Navigation (Ancres)","type":"group","fields":[{"default":true,"id":"navigation.showReveal","label":"Afficher 'La Solution'","type":"boolean"},{"default":"La Solution","id":"navigation.labelReveal","label":"Libellé 'La Solution'","type":"text"},{"default":true,"id":"navigation.showFeatures","label":"Afficher 'Avantages'","type":"boolean"},{"default":"Avantages","id":"navigation.labelFeatures","label":"Libellé 'Avantages'","type":"text"},{"default":true,"id":"navigation.showHowItWorks","label":"Afficher 'Fonctionnement'","type":"boolean"},{"default":"Fonctionnement","id":"navigation.labelHowItWorks","label":"Libellé 'Fonctionnement'","type":"text"},{"default":true,"id":"navigation.showTestimonials","label":"Afficher 'Témoignages'","type":"boolean"},{"default":"Témoignages","id":"navigation.labelTestimonials","label":"Libellé 'Témoignages'","type":"text"},{"default":true,"id":"navigation.showFaq","label":"Afficher 'FAQ'","type":"boolean"},{"default":"FAQ","id":"navigation.labelFaq","label":"Libellé 'FAQ'","type":"text"},{"default":true,"id":"navigation.showFinalCta","label":"Afficher 'Commencer'","type":"boolean"},{"default":"Commencer","id":"navigation.labelFinalCta","label":"Libellé 'Commencer'","type":"text"}]},{"label":"Palette & Branding","type":"group","fields":[{"default":"#000000","id":"palette.primary","label":"Primaire (Brand)","type":"color"},{"default":"#f3f4f6","id":"palette.secondary","label":"Secondaire","type":"color"},{"default":"#3b82f6","id":"palette.accent","label":"Accent (Highlights)","type":"color"},{"default":"#ffffff","id":"palette.background","label":"Fond Page","type":"color"},{"default":"#1f2937","id":"palette.text","label":"Texte Principal","type":"color"},{"default":"#ffffff","id":"palette.cardBackground","label":"Fond Cartes","type":"color"}]}],"baseTemplate":"focus"},"apiEndpoints":{"stacy":"http://127.0.0.1:5001/zflex-wizard/us-central1/askStacyApi","resumeConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/resumeConversationApi","createConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/createConversationApi","continueConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/continueConversationApi","createOrder":"http://127.0.0.1:5001/zflex-wizard/us-central1/createOrderApi","subscribeToNewsletter":"http://127.0.0.1:5001/zflex-wizard/us-central1/subscribeToNewsletterApi","submitReview":"http://127.0.0.1:5001/zflex-wizard/us-central1/submitReviewApi","getOrderDetails":"http://127.0.0.1:5001/zflex-wizard/us-central1/getOrderApi","trackEvent":"http://127.0.0.1:5001/zflex-wizard/us-central1/tracker","initiatePayment":"http://127.0.0.1:5001/zflex-wizard/us-central1/initiatePayment","getOrderStatusApi":"http://127.0.0.1:5001/zflex-wizard/us-central1/getOrderStatusApi","getProspectInfo":"http://127.0.0.1:5001/zflex-wizard/us-central1/getProspectInfo"}}</script><div data-zflex-section="hero" class="mb-24 last:mb-0"><div data-zflex-variant-container="hero"><section class="hero-section hero-cinematic text-contrast"><div class="hero-bg-media"><div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1630653200071-caddbcefdc1b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxlbmNoYW50ZWQlMjBmYXJtJTIwbGFuZHNjYXBlJTIwc29mdCUyMGxpZ2h0fGVufDB8MHx8fDE3Njg4NDAwMzZ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080');" role="img" aria-label="green grass field during sunset" data-zflex-bind="image" data-zflex-alt="hero.image" data-zflex-id="hero.image"></div><div class="image-overlay"></div></div><div class="container relative z-10"><div class="hero-content"><h1 class="hero-title reveal-on-scroll" data-zflex-bind="headline" data-zflex-id="hero.headline">Wizard Farmers: La Magie de la Fraîcheur Livrée</h1><p class="hero-subtitle reveal-on-scroll" style="transition-delay: 0.2s" data-zflex-bind="subheadline" data-zflex-id="hero.subheadline">Des poules bio heureuses, des œufs frais et délicieux, directement de notre ferme enchantée à votre table.</p><div class="hero-cta reveal-on-scroll" style="transition-delay: 0.4s"><a href="/catalog" class="zflex-link btn btn-primary">Voir la Collection (4)</a></div></div></div><div class="scroll-indicator animate-bounce"><i class="fa-solid fa-chevron-down"></i></div></section></div><template data-zflex-variant="hero.cinematic"><section class="hero-section hero-cinematic text-contrast"><div class="hero-bg-media"><div class="hero-image" style="background-image: url('');" role="img" aria-label="Hero Image" data-zflex-bind="image" data-zflex-alt="hero.image"></div><div class="image-overlay"></div></div><div class="container relative z-10"><div class="hero-content"><h1 class="hero-title" data-zflex-bind="headline" data-zflex-id="hero.headline">Titre</h1><p class="hero-subtitle" data-zflex-bind="subheadline" data-zflex-id="hero.subheadline">Sous-titre</p><div class="hero-cta"><a href="#" class="zflex-link btn btn-primary" data-zflex-bind="ctaText" data-zflex-id="hero.ctaText">Action</a></div></div></div><div class="scroll-indicator animate-bounce"><i class="fa-solid fa-chevron-down"></i></div></section></template><template data-zflex-variant="hero.split"><section class="hero-section hero-split"><div class="container relative z-10"><div class="hero-content"><h1 class="hero-title" data-zflex-bind="headline" data-zflex-id="hero.headline">Titre</h1><p class="hero-subtitle" data-zflex-bind="subheadline" data-zflex-id="hero.subheadline">Sous-titre</p><div class="hero-cta"><a href="#" class="zflex-link btn btn-primary" data-zflex-bind="ctaText" data-zflex-id="hero.ctaText">Action</a></div></div><div class="hero-split-image"><img src="" alt="Hero Image" data-zflex-bind="image" data-zflex-alt="hero.image" data-zflex-id="hero.image"></div></div><div class="scroll-indicator animate-bounce"><i class="fa-solid fa-chevron-down"></i></div></section></template><template data-zflex-variant="hero.minimal"><section class="hero-section hero-minimal"><div class="container relative z-10"><div class="hero-content"><h1 class="hero-title" data-zflex-bind="headline" data-zflex-id="hero.headline">Titre</h1><p class="hero-subtitle" data-zflex-bind="subheadline" data-zflex-id="hero.subheadline">Sous-titre</p><div class="hero-cta"><a href="#" class="zflex-link btn btn-primary" data-zflex-bind="ctaText" data-zflex-id="hero.ctaText">Action</a></div></div></div></section></template><style>/* HERO STYLES LOCAL SCOPE */
+  .hero-section {
+    position: relative;
+    min-height: 90vh; /* Fullscreen par défaut */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 0;
+  }
+
+  /* --- CINEMATIC VARIANT --- */
+  .hero-cinematic .hero-bg-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .hero-cinematic .hero-video,
+  .hero-cinematic .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  .video-overlay,
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Assombrissement pour lisibilité */
+  }
+  .hero-cinematic .hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff; /* Toujours blanc sur fond sombre */
+  }
+  /* Removed local hero-title/subtitle sizes to use global consistent ones override */
+
+  /* --- SPLIT VARIANT --- */
+  .hero-split .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .hero-split .hero-content {
+    text-align: left;
+  }
+  /* Using global .hero-title and .hero-subtitle */
+  .hero-split-image img {
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  /* --- MINIMAL VARIANT --- */
+  .hero-minimal {
+    min-height: 60vh;
+    text-align: center;
+    background: var(--bg-color);
+  }
+  .hero-minimal .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  /* Minimal specifically wants larger text, so we keep override but aligned with system variables */
+  .hero-minimal .hero-title {
+    font-size: 4.5rem;
+    letter-spacing: -2px;
+  }
+  .hero-minimal .hero-subtitle {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+  }
+
+  /* Scroll Indicator */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-color);
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    40% {
+      transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-split .container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      order: 0; /* Reset */
+    }
+    .hero-split .hero-content {
+      text-align: center;
+      order: 2;
+    }
+    .hero-split-image {
+      order: 1;
+      margin-bottom: 2rem;
+    }
+    .hero-minimal .hero-title {
+      font-size: 3rem !important;
+    }
+  }</style></div><div data-zflex-section="painPoints" class="mb-24 last:mb-0"><div data-zflex-variant-container="painPoints"><section class="section-padding bg-contrast text-inverse" data-zflex-section="painPoints"><div class="container"><div class="section-header text-center reveal-on-scroll"><h2 class="section-title text-white" data-zflex-bind="title" data-zflex-id="painPoints.title">Les défis de la fraîcheur et de l&#39;authenticité</h2><p class="section-subtitle text-white-muted" data-zflex-bind="subtitle" data-zflex-id="painPoints.subtitle">Nous avons la solution pour vous !</p></div><div class="pain-grid" data-zflex-repeater="painPoints.items"><div class="pain-item reveal-on-scroll" style="transition-delay: 0s;"><div class="pain-icon-wrapper"><i class="fas fa-question-circle" data-zflex-bind="icon" data-zflex-id="painPoints.items[0].icon"></i></div><p class="pain-text" data-zflex-bind="text" data-zflex-id="painPoints.items[0].text">Vous vous interrogez sur la provenance de vos œufs ?</p></div><div class="pain-item reveal-on-scroll" style="transition-delay: 0.1s;"><div class="pain-icon-wrapper"><i class="fas fa-leaf" data-zflex-bind="icon" data-zflex-id="painPoints.items[1].icon"></i></div><p class="pain-text" data-zflex-bind="text" data-zflex-id="painPoints.items[1].text">Vous cherchez des produits vraiment bio et respectueux de l&#39;environnement ?</p></div><div class="pain-item reveal-on-scroll" style="transition-delay: 0.2s;"><div class="pain-icon-wrapper"><i class="fas fa-clock" data-zflex-bind="icon" data-zflex-id="painPoints.items[2].icon"></i></div><p class="pain-text" data-zflex-bind="text" data-zflex-id="painPoints.items[2].text">Fatigué des œufs qui manquent de fraîcheur et de saveur ?</p></div><div class="pain-item reveal-on-scroll" style="transition-delay: 0.30000000000000004s;"><div class="pain-icon-wrapper"><i class="fas fa-shopping-basket" data-zflex-bind="icon" data-zflex-id="painPoints.items[3].icon"></i></div><p class="pain-text" data-zflex-bind="text" data-zflex-id="painPoints.items[3].text">Envie d&#39;une solution simple et directe pour vos approvisionnements ?</p></div></div></div></section></div><template data-zflex-variant="painPoints.default"><section class="section-padding bg-contrast text-inverse" data-zflex-section="painPoints"><div class="container"><div class="section-header text-center"><h2 class="section-title text-white" data-zflex-bind="title">Pourquoi continuer à galérer ?</h2><p class="section-subtitle text-white-muted" data-zflex-bind="subtitle">Vous connaissez ces problèmes par cœur...</p></div><div class="pain-grid" data-zflex-repeater="painPoints.items"></div></div></section></template><template data-zflex-template="painPoints.items"><div class="pain-item"><div class="pain-icon-wrapper"><i class="fa-solid fa-triangle-exclamation" data-zflex-bind="icon"></i></div><p class="pain-text" data-zflex-bind="text">Description du problème...</p></div></template><style>.bg-contrast {
+    background-color: #111;
+    color: #fff;
+  } /* Toujours sombre pour l'impact */
+  .text-white {
+    color: #fff;
+  }
+  .text-white-muted {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .pain-item {
+    background: rgba(255, 255, 255, 0.05); /* Glassmorphism subtil */
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+  }
+  .pain-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .pain-icon-wrapper {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ef4444; /* Rouge "Danger/Pain" */
+  }
+  .pain-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }</style></div><div data-zflex-section="productReveal" class="mb-24 last:mb-0"><div data-zflex-variant-container="productReveal"><section id="reveal" class="section-padding reveal-section style-split relative overflow-hidden" data-zflex-section="productReveal"><div class="absolute inset-0 pointer-events-none z-0"><div class="glow-blob"></div></div><div class="container relative z-10"><div class="reveal-grid image-right"><div class="reveal-content reveal-on-scroll flex flex-col justify-center"><div class="mb-4"><span class="badge-accent" data-zflex-bind="badge" data-zflex-id="productReveal.badge">Nouveau !</span></div><h2 class="section-title mb-6 leading-tight" data-zflex-bind="title" data-zflex-id="productReveal.title">Des Œufs Bio, Frais et Pleins de Vie</h2><div class="section-subtitle text-muted text-lg mb-8 leading-relaxed" data-zflex-bind="description" data-zflex-id="productReveal.description">Chez Wizard Farmers, nous élevons nos poules avec amour et respect, dans un environnement naturel et bio. Le résultat ? Des œufs d'une fraîcheur incomparable, au goût riche et authentique, livrés directement chez vous. C'est la magie de la nature, simplifiée pour votre quotidien.</div><div class="reveal-cta"><a href="/shop" class="btn btn-primary" data-analytics-type="click_reveal_cta" data-analytics-payload="{&quot;label&quot;:&quot;Découvrir nos offres&quot;,&quot;link&quot;:&quot;/shop&quot;}" data-zflex-bind="btnText" data-zflex-id="productReveal.btnText">Découvrir nos offres</a></div></div><div class="reveal-visual reveal-on-scroll" style="transition-delay: 0.2s"><figure class="image-wrapper"><img src="https://images.unsplash.com/photo-1739571676848-32f2905466ff?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxmcmVlJTIwcmFuZ2UlMjBjaGlja2VucyUyMG5hdHVyYWwlMjBsaWdodCUyMHJ1c3RpY3xlbnwwfDB8fHwxNzY4ODQwMDM1fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="A close up of a chicken with a blurry background" class="product-hero-shot" data-zflex-bind="image" data-zflex-alt="productReveal.image" data-zflex-id="productReveal.image"><div class="visual-glow"></div><div class="floating-circle circle-1"></div><div class="floating-circle circle-2"></div></figure></div></div></div></section></div><template data-zflex-variant="productReveal.spotlight"><section id="reveal" class="section-padding reveal-section style-spotlight relative overflow-hidden" data-zflex-section="productReveal"><div class="container relative z-10"><div class="reveal-grid"><div class="reveal-content flex flex-col justify-center"><div class="mb-4"><span class="badge-accent" data-zflex-bind="badge">Badge</span></div><h2 class="section-title mb-6" data-zflex-bind="title">Titre</h2><div class="section-subtitle text-muted text-lg mb-8" data-zflex-bind="description">Description</div><div class="reveal-cta"><a href="#" class="btn btn-primary" data-zflex-bind="btnText">Action</a></div></div><div class="reveal-visual"><figure class="image-wrapper"><img src="" alt="Product" class="product-hero-shot" data-zflex-bind="image" data-zflex-alt="productReveal.image"></figure></div></div></div></section></template><template data-zflex-variant="productReveal.split"><section id="reveal" class="section-padding reveal-section style-split relative overflow-hidden" data-zflex-section="productReveal"><div class="container relative z-10"><div class="reveal-grid image-right"><div class="reveal-content flex flex-col justify-center"><div class="mb-4"><span class="badge-accent" data-zflex-bind="badge">Badge</span></div><h2 class="section-title mb-6" data-zflex-bind="title">Titre</h2><div class="section-subtitle text-muted text-lg mb-8" data-zflex-bind="description">Description</div><div class="reveal-cta"><a href="#" class="btn btn-primary" data-zflex-bind="btnText">Action</a></div></div><div class="reveal-visual"><figure class="image-wrapper"><img src="" alt="Product" class="product-hero-shot" data-zflex-bind="image" data-zflex-alt="productReveal.image"></figure></div></div></div></section></template><template data-zflex-variant="productReveal.overlap"><section id="reveal" class="section-padding reveal-section style-overlap relative overflow-hidden" data-zflex-section="productReveal"><div class="container relative z-10"><div class="reveal-grid image-right"><div class="reveal-content flex flex-col justify-center"><div class="mb-4"><span class="badge-accent" data-zflex-bind="badge">Badge</span></div><h2 class="section-title mb-6" data-zflex-bind="title">Titre</h2><div class="section-subtitle text-muted text-lg mb-8" data-zflex-bind="description">Description</div><div class="reveal-cta"><a href="#" class="btn btn-primary" data-zflex-bind="btnText">Action</a></div></div><div class="reveal-visual"><figure class="image-wrapper"><img src="" alt="Product" class="product-hero-shot" data-zflex-bind="image" data-zflex-alt="productReveal.image"></figure></div></div></div></section></template><style>/* --- VARIABLES --- */
+  .reveal-section {
+    --reveal-gap: 4rem;
+    --accent-glow: var(--accent-color, #ff0055);
+    --img-height: 500px;
+    --blob-opacity: 0.08;
+  }
+
+  /* --- COMMON ELEMENTS --- */
+  .badge-accent {
+    background: var(--accent-glow);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-hero-shot {
+    width: 100%;
+    height: auto;
+    max-height: var(--img-height);
+    object-fit: contain; /* Important: Show full product */
+    filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.15));
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.5s ease, filter 0.5s ease;
+    position: relative;
+    z-index: 2;
+  }
+
+  .image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .visual-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background: var(--accent-glow);
+    filter: blur(80px);
+    opacity: 0.2;
+    border-radius: 50%;
+    z-index: 1;
+    transition: opacity 0.5s;
+  }
+
+  /* Hover Effect: Product pops */
+  .reveal-section:hover .product-hero-shot {
+    transform: perspective(1000px) scale(1.03) translateY(-10px);
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.25));
+  }
+  .reveal-section:hover .visual-glow {
+    opacity: 0.3;
+  }
+
+  /* --- VARIANT 1: SPOTLIGHT (Vertical Center) --- */
+  .reveal-section.style-spotlight .reveal-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .reveal-section.style-spotlight .reveal-content {
+    margin-bottom: 3rem;
+  }
+  .reveal-section.style-spotlight .reveal-visual {
+    width: 100%;
+  }
+
+  /* --- VARIANT 2: SPLIT (Side by Side) --- */
+  .reveal-section.style-split .reveal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--reveal-gap);
+    align-items: center;
+  }
+  /* Reorder for Left/Right Logic */
+  .reveal-section.style-split .reveal-grid.image-left .reveal-visual {
+    order: -1;
+  }
+
+  /* --- VARIANT 3: OVERLAP (The 3D Depth) --- */
+  .reveal-section.style-overlap .reveal-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Text larger */
+    gap: 2rem;
+    align-items: center;
+    background: var(--card-bg-color); /* Need a bg for contrast */
+    border-radius: var(--border-radius);
+    padding: 4rem; /* Inner padding */
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+  }
+  .reveal-section.style-overlap .reveal-visual {
+    position: relative;
+  }
+  /* The Magic: Image breaks the container */
+  .reveal-section.style-overlap .image-wrapper {
+    width: 140%; /* Make it bigger than its cell */
+    margin-left: -20%; /* Pull it left/right */
+  }
+
+  /* Specific adjustments for Right Image Overlap */
+  .reveal-section.style-overlap .reveal-grid.image-right .image-wrapper {
+    margin-right: -40%;
+    margin-left: 0;
+    transform: translateX(10%);
+  }
+  /* Specific adjustments for Left Image Overlap */
+  .reveal-section.style-overlap .reveal-grid.image-left {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+  .reveal-section.style-overlap .reveal-grid.image-left .reveal-visual {
+    order: -1;
+  }
+  .reveal-section.style-overlap .reveal-grid.image-left .image-wrapper {
+    margin-left: -40%;
+    transform: translateX(-10%);
+  }
+
+  /* --- DECORATIONS --- */
+  .floating-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(5px);
+    z-index: 3;
+    animation: float 6s ease-in-out infinite;
+  }
+  .circle-1 {
+    width: 60px;
+    height: 60px;
+    top: 10%;
+    right: 10%;
+    animation-delay: 0s;
+  }
+  .circle-2 {
+    width: 40px;
+    height: 40px;
+    bottom: 15%;
+    left: 15%;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /* --- RESPONSIVE --- */
+  @media (max-width: 992px) {
+    /* Force stack on mobile for all variants */
+    .reveal-section.style-split .reveal-grid,
+    .reveal-section.style-overlap .reveal-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 3rem;
+    }
+
+    /* Reset Overlap Specifics */
+    .reveal-section.style-overlap .reveal-grid {
+      padding: 2rem;
+    }
+    .reveal-section.style-overlap .image-wrapper,
+    .reveal-section.style-overlap .reveal-grid.image-right .image-wrapper,
+    .reveal-section.style-overlap .reveal-grid.image-left .image-wrapper {
+      width: 100%;
+      margin: 0;
+      transform: none;
+    }
+
+    /* Reorder logic on mobile: Image usually better on top or bottom depending on content */
+    /* Let's keep Text first on mobile for SEO/Context */
+    .reveal-section.style-split .reveal-grid.image-left .reveal-visual,
+    .reveal-section.style-overlap .reveal-grid.image-left .reveal-visual {
+      order: 0; /* Reset order */
+    }
+  }</style></div><div data-zflex-section="features" class="mb-24 last:mb-0"><div data-zflex-variant-container="features"><section id="features" class="reveal-section features-section features-zigzag" style="background-color: var(--bg-color-alt, rgba(0, 0, 0, 0.02))" data-zflex-section="features"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16 reveal-on-scroll"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="features.title">Nos Engagements Enchantés</h2><p class="section-subtitle" data-zflex-bind="subtitle" data-zflex-id="features.subtitle">Découvrez ce qui rend Wizard Farmers unique</p></div><div class="zigzag-wrapper" data-zflex-repeater="features.items"><div class="zigzag-item reveal-on-scroll"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title" data-zflex-id="features.items[0].title">Poules Heureuses, Œufs Délicieux</h3><p class="feature-desc" data-zflex-bind="description" data-zflex-id="features.items[0].description">Nos poules bio vivent une vie de rêve en plein air, ce qui se reflète dans la qualité et le goût exceptionnel de chaque œuf.</p></div><div class="zigzag-image"><div class="feature-visual-wrapper" style=""><img src="https://images.unsplash.com/photo-1626792191569-9c9727209573?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxmcmVlJTIwcmFuZ2UlMjBjaGlja2VucyUyMG5hdHVyYWwlMjBsaWdodCUyMHJ1c3RpY3xlbnwwfDB8fHwxNzY4ODQwMDM1fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="brown hen on green grass field during daytime" data-zflex-bind="image" data-zflex-alt="features.items[0].image" data-zflex-id="features.items[0].image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind" style="display:none;"><i class="" data-zflex-bind="icon" data-zflex-id="features.items[0].icon"></i></div></div></div></div><div class="zigzag-item reveal-on-scroll"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title" data-zflex-id="features.items[1].title">Fraîcheur Magique, Livrée Directement</h3><p class="feature-desc" data-zflex-bind="description" data-zflex-id="features.items[1].description">Oubliez les supermarchés. Nous vous livrons des œufs extra-frais, directement de notre ferme enchantée à votre cuisine, en un clin d&#39;œil.</p></div><div class="zigzag-image"><div class="feature-visual-wrapper" style=""><img src="https://images.unsplash.com/photo-1604793969715-28e08acd284c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxteXN0aWNhbCUyMGZvcmVzdCUyMHBhdGglMjBmYXJtJTIwZW50cmFuY2V8ZW58MHwwfHx8MTc2ODg0MDAzNXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="brown dirt road in between green trees during daytime" data-zflex-bind="image" data-zflex-alt="features.items[1].image" data-zflex-id="features.items[1].image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind" style="display:none;"><i class="" data-zflex-bind="icon" data-zflex-id="features.items[1].icon"></i></div></div></div></div><div class="zigzag-item reveal-on-scroll"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title" data-zflex-id="features.items[2].title">Engagement Bio et Naturel</h3><p class="feature-desc" data-zflex-bind="description" data-zflex-id="features.items[2].description">Nous sommes fiers de notre approche 100% biologique, sans pesticides ni produits chimiques, pour une alimentation saine et respectueuse de l&#39;environnement.</p></div><div class="zigzag-image"><div class="feature-visual-wrapper" style=""><img src="https://images.unsplash.com/photo-1597022187576-c62f63e6c2a2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxlbmNoYW50ZWQlMjBmYXJtJTIwbGFuZHNjYXBlJTIwc29mdCUyMGxpZ2h0fGVufDB8MHx8fDE3Njg4NDAwMzZ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="green grass field with trees under white clouds and blue sky during daytime" data-zflex-bind="image" data-zflex-alt="features.items[2].image" data-zflex-id="features.items[2].image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind" style="display:none;"><i class="" data-zflex-bind="icon" data-zflex-id="features.items[2].icon"></i></div></div></div></div><div class="zigzag-item reveal-on-scroll"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title" data-zflex-id="features.items[3].title">Un Goût Authentique et Mystérieux</h3><p class="feature-desc" data-zflex-bind="description" data-zflex-id="features.items[3].description">Chaque œuf est une petite merveille, portant en lui la saveur riche et authentique de notre terroir, avec une touche de magie fermière.</p></div><div class="zigzag-image"><div class="feature-visual-wrapper" style=""><img src="https://images.unsplash.com/photo-1752360831997-eb7fe3686854?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwzfHxvcmdhbmljJTIwZWdncyUyMG5lc3QlMjBtYWdpY2FsJTIwZm9yZXN0fGVufDB8MHx8fDE3Njg4NDAwMzV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Two eggs sit safely in a bird&#39;s nest." data-zflex-bind="image" data-zflex-alt="features.items[3].image" data-zflex-id="features.items[3].image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind" style="display:none;"><i class="" data-zflex-bind="icon" data-zflex-id="features.items[3].icon"></i></div></div></div></div></div></div></section></div><template data-zflex-variant="features.zigzag"><section class="reveal-section features-section features-zigzag" style="background-color: var(--bg-color-alt)"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="features.title">Titre</h2><p class="section-subtitle" data-zflex-bind="subtitle" data-zflex-id="features.subtitle">Sous-titre</p></div><div class="zigzag-wrapper" data-zflex-repeater="features.items"></div></div></section></template><template data-zflex-variant="features.cards"><section class="reveal-section features-section features-cards" style="background-color: var(--bg-color-alt)"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="features.title">Titre</h2><p class="section-subtitle" data-zflex-bind="subtitle" data-zflex-id="features.subtitle">Sous-titre</p></div><div class="features-grid" data-zflex-repeater="features.items"></div></div></section></template><template data-zflex-variant="features.list"><section class="reveal-section features-section features-list" style="background-color: var(--bg-color-alt)"><div class="container"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="features.title">Titre</h2><p class="section-subtitle" data-zflex-bind="subtitle" data-zflex-id="features.subtitle">Sous-titre</p></div><div class="features-list-wrapper max-w-3xl mx-auto" data-zflex-repeater="features.items"></div></div></section></template><template data-zflex-template="features.items"><div class="feature-card items-layout-cards"><div class="feature-image-card"><div class="feature-visual-wrapper"><img src="" alt="" data-zflex-bind="image" data-zflex-alt="features.items.image" class="feature-img-bind"><div class="feature-icon-bind text-5xl text-accent mb-4"><i class="fas fa-star" data-zflex-bind="icon"></i></div></div></div><h3 class="feature-title mt-4" data-zflex-bind="title">Titre</h3><p class="feature-desc" data-zflex-bind="description">Description...</p></div><div class="zigzag-item items-layout-zigzag"><div class="zigzag-content"><h3 class="feature-title" data-zflex-bind="title">Titre</h3><p class="feature-desc" data-zflex-bind="description">Description...</p></div><div class="zigzag-image"><div class="feature-visual-wrapper"><img src="" alt="" data-zflex-bind="image" data-zflex-alt="features.items.image" class="feature-img-bind"><div class="feature-icon-placeholder feature-icon-bind"><i class="fas fa-star" data-zflex-bind="icon"></i></div></div></div></div><div class="feature-list-item items-layout-list border-b border-card-border py-4 flex items-start gap-4"><div class="check-icon text-accent mt-1 feature-icon-bind"><i class="fas fa-check" data-zflex-bind="icon"></i></div><div><h4 class="font-bold text-lg" data-zflex-bind="title">Titre</h4><p class="text-muted" data-zflex-bind="description">Description...</p></div></div></template><style>/* Logic: Hide all layouts by default, show based on parent section class */
+  .features-section .items-layout-cards,
+  .features-section .items-layout-zigzag,
+  .features-section .items-layout-list {
+    display: none;
+  }
+
+  .features-cards .items-layout-cards {
+    display: block;
+  }
+  .features-zigzag .items-layout-zigzag {
+    display: flex;
+  }
+  .features-list .items-layout-list {
+    display: flex;
+  }</style><style>/* COMMON */
+  .feature-icon-placeholder {
+    font-size: 5rem;
+    color: var(--accent-color);
+    text-align: center;
+    padding: 2rem;
+    background: var(--card-bg-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border-color);
+  }
+
+  /* ZIGZAG STYLES */
+  .zigzag-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+  }
+  .zigzag-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .zigzag-content {
+    flex: 1;
+  }
+  .zigzag-image {
+    flex: 1;
+  }
+  .zigzag-image img {
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+  }
+  .zigzag-content .feature-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  .zigzag-content .feature-desc {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+
+  /* CARDS STYLES */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .feature-card {
+    background: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border-color);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  .feature-image-card img {
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  /* LIST STYLES */
+  .max-w-3xl {
+    max-width: 48rem;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .border-b {
+    border-bottom-width: 1px;
+  }
+  .border-card-border {
+    border-color: var(--card-border-color);
+  }
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .flex {
+    display: flex;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .gap-4 {
+    gap: 1rem;
+  }
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .zigzag-item,
+    .zigzag-item:nth-child(even) {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    /* CARDS CAROUSEL ON MOBILE */
+    .features-cards .features-grid {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 1.5rem;
+      gap: 1rem;
+      margin-right: -1.5rem; /* Break container padding */
+      padding-right: 1.5rem;
+    }
+    .features-cards .features-grid::-webkit-scrollbar {
+      display: none;
+    }
+    .features-cards .feature-card {
+      min-width: 85%;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+    }
+  }</style></div><div data-zflex-section="howItWorks" class="mb-24 last:mb-0"><div data-zflex-variant-container="howItWorks"><section id="how-it-works" class="bg-secondary-light relative overflow-hidden"><div class="container relative z-10"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title reveal-on-scroll" data-zflex-bind="title" data-zflex-id="howItWorks.title">Comment ça Marche ?</h2><p class="section-subtitle reveal-on-scroll mt-4 text-muted" data-zflex-bind="subtitle" data-zflex-id="howItWorks.subtitle">Un processus simple et transparent</p></div><ol class="steps-wrapper style-timeline list-none p-0 m-0" data-zflex-repeater="howItWorks.steps"><li class="step-item reveal-on-scroll group" style="transition-delay: 0s;" data-zflex-id="howItWorks.steps[0]"><div class="step-indicator"><span class="step-num" style="display: none;">1</span> <span class="step-icon" style=""><i class="fas fa-egg" data-zflex-bind="icon" data-zflex-id="howItWorks.steps[0].icon"></i></span></div><div class="step-content"><h3 class="step-title group-hover:text-primary transition-colors duration-300" data-zflex-bind="title" data-zflex-id="howItWorks.steps[0].title">Ponte Magique</h3><p class="step-desc text-muted" data-zflex-bind="desc" data-zflex-id="howItWorks.steps[0].desc">Nos poules bio, élevées en plein air, pondent des œufs d&#39;une qualité exceptionnelle, imprégnés de la magie de la nature.</p></div></li><li class="step-item reveal-on-scroll group" style="transition-delay: 0.15s;" data-zflex-id="howItWorks.steps[1]"><div class="step-indicator"><span class="step-num" style="display: none;">2</span> <span class="step-icon" style=""><i class="fas fa-hand-holding-heart" data-zflex-bind="icon" data-zflex-id="howItWorks.steps[1].icon"></i></span></div><div class="step-content"><h3 class="step-title group-hover:text-primary transition-colors duration-300" data-zflex-bind="title" data-zflex-id="howItWorks.steps[1].title">Récolte Enchantée</h3><p class="step-desc text-muted" data-zflex-bind="desc" data-zflex-id="howItWorks.steps[1].desc">Chaque matin, nos fermiers récoltent délicatement les œufs, assurant leur fraîcheur optimale pour votre plaisir.</p></div></li><li class="step-item reveal-on-scroll group" style="transition-delay: 0.3s;" data-zflex-id="howItWorks.steps[2]"><div class="step-indicator"><span class="step-num" style="display: none;">3</span> <span class="step-icon" style=""><i class="fas fa-box-open" data-zflex-bind="icon" data-zflex-id="howItWorks.steps[2].icon"></i></span></div><div class="step-content"><h3 class="step-title group-hover:text-primary transition-colors duration-300" data-zflex-bind="title" data-zflex-id="howItWorks.steps[2].title">Préparation Soignée</h3><p class="step-desc text-muted" data-zflex-bind="desc" data-zflex-id="howItWorks.steps[2].desc">Les œufs sont triés et emballés avec le plus grand soin, prêts pour leur voyage vers votre domicile.</p></div></li><li class="step-item reveal-on-scroll group" style="transition-delay: 0.44999999999999996s;" data-zflex-id="howItWorks.steps[3]"><div class="step-indicator"><span class="step-num" style="display: none;">4</span> <span class="step-icon" style=""><i class="fas fa-truck" data-zflex-bind="icon" data-zflex-id="howItWorks.steps[3].icon"></i></span></div><div class="step-content"><h3 class="step-title group-hover:text-primary transition-colors duration-300" data-zflex-bind="title" data-zflex-id="howItWorks.steps[3].title">Livraison à Domicile</h3><p class="step-desc text-muted" data-zflex-bind="desc" data-zflex-id="howItWorks.steps[3].desc">Notre équipe de livraison vous apporte la fraîcheur directement à votre porte, avec un service fiable et souriant.</p></div></li></ol></div></section></div><template data-zflex-variant="howItWorks.timeline"><section id="how-it-works" class="bg-secondary-light relative overflow-hidden" data-zflex-section="howItWorks"><div class="container relative z-10"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="howItWorks.title">Titre</h2><p class="section-subtitle mt-4 text-muted" data-zflex-bind="subtitle" data-zflex-id="howItWorks.subtitle">Sous-titre</p></div><ol class="steps-wrapper style-timeline list-none p-0 m-0" data-zflex-repeater="howItWorks.steps"></ol></div></section></template><template data-zflex-variant="howItWorks.cards"><section id="how-it-works" class="bg-secondary-light relative overflow-hidden" data-zflex-section="howItWorks"><div class="container relative z-10"><div class="text-center max-w-2xl mx-auto mb-16"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="howItWorks.title">Titre</h2><p class="section-subtitle mt-4 text-muted" data-zflex-bind="subtitle" data-zflex-id="howItWorks.subtitle">Sous-titre</p></div><ol class="steps-wrapper style-cards list-none p-0 m-0" data-zflex-repeater="howItWorks.steps"></ol></div></section></template><template data-zflex-template="howItWorks.steps"><li class="step-item group"><div class="step-indicator"><span class="step-num" data-zflex-bind="index">#</span> <span class="step-icon feature-icon-bind" style="display: none;"><i class="fas fa-star" data-zflex-bind="icon"></i></span></div><div class="step-content"><h3 class="step-title group-hover:text-primary transition-colors duration-300" data-zflex-bind="title">Etape</h3><p class="step-desc text-muted" data-zflex-bind="desc">Description...</p></div></li></template><style>/* Ensure only one indicator type is visible at a time */
+  .step-indicator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-indicator .step-num,
+  .step-indicator .step-icon {
+    position: absolute;
+  }
+
+  /* When showIcons is active, preview.ts toggles display inline */
+  /* This prevents both from showing simultaneously */</style><style>/* --- VARIABLES LOCALS --- */
+  #how-it-works {
+    --step-line-color: var(--border-color, #e5e7eb);
+    --step-line-active: var(--primary-color, #000);
+    --indicator-size: 3.5rem;
+    --indicator-bg: var(--card-bg-color, #fff);
+    --indicator-border: 2px solid var(--border-color, #e5e7eb);
+  }
+
+  /* --- BASE LAYOUT --- */
+  .steps-wrapper {
+    display: grid;
+    gap: 2rem;
+  }
+
+  /* --- VARIANT: CARDS (GRID) --- */
+  .steps-wrapper.style-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .steps-wrapper.style-cards .step-item {
+    background: var(--card-bg-color);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .steps-wrapper.style-cards .step-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  .steps-wrapper.style-cards .step-indicator {
+    margin-bottom: 1.5rem;
+    width: var(--indicator-size);
+    height: var(--indicator-size);
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  /* --- VARIANT: TIMELINE (THE REAL DEAL) --- */
+  .steps-wrapper.style-timeline {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    position: relative;
+  }
+
+  .steps-wrapper.style-timeline .step-item {
+    position: relative;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; /* Above the line */
+  }
+
+  /* THE LINE LOGIC (Pure CSS, no HTML bloat) */
+  .steps-wrapper.style-timeline .step-item::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--indicator-size) / 2);
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: var(--step-line-color);
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+
+  /* Hide line on the last item */
+  .steps-wrapper.style-timeline .step-item:last-child::after {
+    display: none;
+  }
+
+  /* INDICATOR STYLING */
+  .steps-wrapper.style-timeline .step-indicator {
+    width: var(--indicator-size);
+    height: var(--indicator-size);
+    background: var(--indicator-bg);
+    border: var(--indicator-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+  }
+
+  .steps-wrapper.style-timeline .step-item:hover .step-indicator {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  /* TEXT STYLING */
+  .step-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  .step-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* --- RESPONSIVE MOBILE (VERTICAL TIMELINE) --- */
+  @media (max-width: 768px) {
+    .steps-wrapper.style-timeline {
+      grid-template-columns: 1fr; /* Stack them */
+      text-align: left;
+      padding-left: 1rem;
+    }
+
+    .steps-wrapper.style-timeline .step-item {
+      flex-direction: row; /* Icon left, text right */
+      align-items: flex-start;
+      padding: 0 0 3rem 0; /* Space at bottom for line */
+    }
+
+    /* Adjust Line to be Vertical */
+    .steps-wrapper.style-timeline .step-item::after {
+      width: 2px;
+      height: 100%;
+      top: calc(var(--indicator-size) / 2); /* Start at center of circle */
+      left: calc(
+        var(--indicator-size) / 2
+      ); /* Center horizontally relative to icon */
+      transform: translateX(-50%); /* Centering fix */
+    }
+
+    .steps-wrapper.style-timeline .step-indicator {
+      flex-shrink: 0; /* Prevent icon shrinking */
+      margin-bottom: 0;
+      margin-right: 1.5rem;
+    }
+
+    .steps-wrapper.style-timeline .step-content {
+      padding-top: 0.5rem; /* Align text with icon top */
+    }
+  }</style></div><div data-zflex-section="testimonials" class="mb-24 last:mb-0"><div data-zflex-variant-container="testimonials"><section id="testimonials"><div class="container text-center"><h2 class="section-title reveal-on-scroll" data-zflex-bind="title" data-zflex-id="testimonials.title">Nos Clients Enchantés Parlent de Nous</h2><p class="section-subtitle reveal-on-scroll mb-4" data-zflex-bind="subtitle" data-zflex-id="testimonials.subtitle">Ils ont goûté la magie, découvrez leurs avis</p><div class="stars text-accent mb-4 reveal-on-scroll"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="testimonials-wrapper style-carousel mt-8" data-zflex-repeater="testimonials.items"><div class="review-card reveal-on-scroll" style="transition-delay: 0s;"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p class="review-text" data-zflex-bind="text" data-zflex-id="testimonials.items[0].text">"Les œufs de Wizard Farmers sont tout simplement incroyables ! Une fraîcheur et un goût que je n&#39;avais pas retrouvés depuis mon enfance à la campagne. La livraison est toujours impeccable."</p><p class="review-author" data-zflex-bind="author" data-zflex-id="testimonials.items[0].author">- Élise D.</p></div><div class="review-card reveal-on-scroll" style="transition-delay: 0.1s;"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p class="review-text" data-zflex-bind="text" data-zflex-id="testimonials.items[1].text">"Enfin des œufs bio qui ont du sens ! On sent que les poules sont bien traitées. C&#39;est devenu un incontournable de nos petits-déjeuners. Un vrai délice !"</p><p class="review-author" data-zflex-bind="author" data-zflex-id="testimonials.items[1].author">- Marc L.</p></div><div class="review-card reveal-on-scroll" style="transition-delay: 0.2s;"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p class="review-text" data-zflex-bind="text" data-zflex-id="testimonials.items[2].text">"Le service de Wizard Farmers est magique ! Des œufs frais livrés à ma porte, c&#39;est un gain de temps énorme et la qualité est irréprochable. Je recommande à 100%."</p><p class="review-author" data-zflex-bind="author" data-zflex-id="testimonials.items[2].author">- Sophie R.</p></div><div class="review-card reveal-on-scroll" style="transition-delay: 0.30000000000000004s;"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p class="review-text" data-zflex-bind="text" data-zflex-id="testimonials.items[3].text">"J&#39;apprécie l&#39;engagement bio et la transparence de Wizard Farmers. Les œufs sont délicieux et je sais d&#39;où ils viennent. C&#39;est un plaisir de soutenir une telle entreprise."</p><p class="review-author" data-zflex-bind="author" data-zflex-id="testimonials.items[3].author">- David K.</p></div></div><div class="source-trust mt-4 text-muted text-sm reveal-on-scroll" data-zflex-bind="source" data-zflex-id="testimonials.source">Avis Vérifiés</div></div></section></div><template data-zflex-variant="testimonials.carousel"><section id="testimonials"><div class="container text-center"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="testimonials.title">Titre</h2><p class="section-subtitle mb-4" data-zflex-bind="subtitle" data-zflex-id="testimonials.subtitle">Sous-titre</p><div class="stars text-accent mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="testimonials-wrapper style-carousel mt-8" data-zflex-repeater="testimonials.items"></div><div class="source-trust mt-4 text-muted text-sm" data-zflex-bind="source" data-zflex-id="testimonials.source">Source</div></div></section></template><template data-zflex-variant="testimonials.grid"><section id="testimonials"><div class="container text-center"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="testimonials.title">Titre</h2><p class="section-subtitle mb-4" data-zflex-bind="subtitle" data-zflex-id="testimonials.subtitle">Sous-titre</p><div class="stars text-accent mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="testimonials-wrapper style-grid mt-8" data-zflex-repeater="testimonials.items"></div><div class="source-trust mt-4 text-muted text-sm" data-zflex-bind="source" data-zflex-id="testimonials.source">Source</div></div></section></template><template data-zflex-variant="testimonials.spotlight"><section id="testimonials"><div class="container text-center"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="testimonials.title">Titre</h2><p class="section-subtitle mb-4" data-zflex-bind="subtitle" data-zflex-id="testimonials.subtitle">Sous-titre</p><div class="testimonials-wrapper style-spotlight mt-8" data-zflex-repeater="testimonials.items"></div><div class="source-trust mt-4 text-muted text-sm" data-zflex-bind="source" data-zflex-id="testimonials.source">Source</div></div></section></template><template data-zflex-template="testimonials.items"><div class="review-card"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p class="review-text" data-zflex-bind="text">"Avis..."</p><p class="review-author" data-zflex-bind="author">- Auteur</p></div></template><style>.quote-icon {
+    font-size: 2rem;
+    color: var(--card-border-color);
+    margin-bottom: 1rem;
+  }
+  .review-text {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .review-author {
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+
+  /* GRID STYLE */
+  .features-grid {
+    /* Keep existing CSS even if unused here to avoid breaking */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .style-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .style-grid .review-card {
+    background: var(--card-bg-color);
+    padding: 2rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: var(--border-radius);
+  }
+
+  /* CAROUSEL STYLE (Basic CSS Grid Scroll snap for simplicity) */
+  .style-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+    /* Hide scrollbar but keep scroll functionality */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  .style-carousel::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+  }
+  .style-carousel .review-card {
+    min-width: 300px;
+    flex: 1;
+    scroll-snap-align: center;
+    background: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border-color);
+  }
+
+  /* SPOTLIGHT STYLE (Added generic support for it) */
+  .style-spotlight {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .style-spotlight .review-card {
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+  }</style></div><div data-zflex-section="faq" class="mb-24 last:mb-0"><div data-zflex-variant-container="faq"><section id="faq" class="section-padding bg-secondary-light"><div class="container max-w-4xl"><div class="text-center mb-12"><h2 class="section-title reveal-on-scroll" data-zflex-bind="title" data-zflex-id="faq.title">Foire Aux Questions</h2><p class="section-subtitle reveal-on-scroll mt-3 text-muted" data-zflex-bind="subtitle" data-zflex-id="faq.subtitle">Des réponses claires à vos interrogations</p></div><script type="application/ld+json">{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            
+            {
+              "@type": "Question",
+              "name": "Comment sont élevées vos poules ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nos poules sont élevées en plein air, dans le respect de la nature et des normes biologiques strictes. Elles gambadent librement dans nos prairies enchantées, nourries avec des aliments bio et sans OGM."
+              }
+            },
+            
+            {
+              "@type": "Question",
+              "name": "Quelle est la zone de livraison ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nous livrons actuellement dans un rayon de 50km autour de notre ferme. Veuillez nous contacter directement pour vérifier si votre adresse est couverte par notre service de livraison magique."
+              }
+            },
+            
+            {
+              "@type": "Question",
+              "name": "Puis-je visiter votre ferme ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pour des raisons de bien-être animal et de sécurité, les visites ne sont pas ouvertes au public pour le moment. Cependant, nous partageons régulièrement des aperçus de notre vie à la ferme sur nos réseaux sociaux !"
+              }
+            },
+            
+            {
+              "@type": "Question",
+              "name": "Comment garantir la fraîcheur des œufs ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nos œufs sont ramassés quotidiennement et livrés dans les 24 à 48 heures suivant la ponte. Nous utilisons des emballages protecteurs et des véhicules adaptés pour maintenir une fraîcheur optimale jusqu&#39;à votre porte."
+              }
+            }
+            
+          ]
+        }</script><div class="faq-wrapper style-boxed" data-zflex-repeater="faq.items"><details class="faq-item group reveal-on-scroll" name="faq-accordion" style="transition-delay: 0s;" data-zflex-id="faq.items[0]"><summary class="faq-summary flex justify-between items-center cursor-pointer list-none"><span class="font-bold text-lg pr-8" data-zflex-bind="question">Comment sont élevées vos poules ?</span> <span class="faq-icon relative w-6 h-6 flex-shrink-0 flex items-center justify-center transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span></summary><div class="faq-content-wrapper grid grid-rows-[0fr] transition-all duration-300 ease-out"><div class="faq-content overflow-hidden"><div class="pb-6 pt-2 text-muted leading-relaxed" data-zflex-bind="answer">Nos poules sont élevées en plein air, dans le respect de la nature et des normes biologiques strictes. Elles gambadent librement dans nos prairies enchantées, nourries avec des aliments bio et sans OGM.</div></div></div></details><details class="faq-item group reveal-on-scroll" name="faq-accordion" style="transition-delay: 0.1s;" data-zflex-id="faq.items[1]"><summary class="faq-summary flex justify-between items-center cursor-pointer list-none"><span class="font-bold text-lg pr-8" data-zflex-bind="question">Quelle est la zone de livraison ?</span> <span class="faq-icon relative w-6 h-6 flex-shrink-0 flex items-center justify-center transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span></summary><div class="faq-content-wrapper grid grid-rows-[0fr] transition-all duration-300 ease-out"><div class="faq-content overflow-hidden"><div class="pb-6 pt-2 text-muted leading-relaxed" data-zflex-bind="answer">Nous livrons actuellement dans un rayon de 50km autour de notre ferme. Veuillez nous contacter directement pour vérifier si votre adresse est couverte par notre service de livraison magique.</div></div></div></details><details class="faq-item group reveal-on-scroll" name="faq-accordion" style="transition-delay: 0.2s;" data-zflex-id="faq.items[2]"><summary class="faq-summary flex justify-between items-center cursor-pointer list-none"><span class="font-bold text-lg pr-8" data-zflex-bind="question">Puis-je visiter votre ferme ?</span> <span class="faq-icon relative w-6 h-6 flex-shrink-0 flex items-center justify-center transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span></summary><div class="faq-content-wrapper grid grid-rows-[0fr] transition-all duration-300 ease-out"><div class="faq-content overflow-hidden"><div class="pb-6 pt-2 text-muted leading-relaxed" data-zflex-bind="answer">Pour des raisons de bien-être animal et de sécurité, les visites ne sont pas ouvertes au public pour le moment. Cependant, nous partageons régulièrement des aperçus de notre vie à la ferme sur nos réseaux sociaux !</div></div></div></details><details class="faq-item group reveal-on-scroll" name="faq-accordion" style="transition-delay: 0.30000000000000004s;" data-zflex-id="faq.items[3]"><summary class="faq-summary flex justify-between items-center cursor-pointer list-none"><span class="font-bold text-lg pr-8" data-zflex-bind="question">Comment garantir la fraîcheur des œufs ?</span> <span class="faq-icon relative w-6 h-6 flex-shrink-0 flex items-center justify-center transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span></summary><div class="faq-content-wrapper grid grid-rows-[0fr] transition-all duration-300 ease-out"><div class="faq-content overflow-hidden"><div class="pb-6 pt-2 text-muted leading-relaxed" data-zflex-bind="answer">Nos œufs sont ramassés quotidiennement et livrés dans les 24 à 48 heures suivant la ponte. Nous utilisons des emballages protecteurs et des véhicules adaptés pour maintenir une fraîcheur optimale jusqu&#39;à votre porte.</div></div></div></details></div></div></section></div><template data-zflex-variant="faq.simple"><section id="faq" class="section-padding bg-secondary-light"><div class="container max-w-4xl"><div class="text-center mb-12"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="faq.title">Titre</h2><p class="section-subtitle mt-3 text-muted" data-zflex-bind="subtitle" data-zflex-id="faq.subtitle">Sous-titre</p></div><div class="faq-wrapper style-simple" data-zflex-repeater="faq.items"></div></div></section></template><template data-zflex-variant="faq.boxed"><section id="faq" class="section-padding bg-secondary-light"><div class="container max-w-4xl"><div class="text-center mb-12"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="faq.title">Titre</h2><p class="section-subtitle mt-3 text-muted" data-zflex-bind="subtitle" data-zflex-id="faq.subtitle">Sous-titre</p></div><div class="faq-wrapper style-boxed" data-zflex-repeater="faq.items"></div></div></section></template><template data-zflex-variant="faq.grid"><section id="faq" class="section-padding bg-secondary-light"><div class="container"><div class="text-center mb-12"><h2 class="section-title" data-zflex-bind="title" data-zflex-id="faq.title">Titre</h2><p class="section-subtitle mt-3 text-muted" data-zflex-bind="subtitle" data-zflex-id="faq.subtitle">Sous-titre</p></div><div class="faq-wrapper style-grid" data-zflex-repeater="faq.items"></div></div></section></template><template data-zflex-template="faq.items"><details class="faq-item group" name="faq-accordion"><summary class="faq-summary flex justify-between items-center cursor-pointer list-none"><span class="font-bold text-lg pr-8" data-zflex-bind="question">Question</span> <span class="faq-icon relative w-6 h-6 flex-shrink-0 flex items-center justify-center transition-transform duration-300"><i class="fa-solid fa-chevron-down"></i></span></summary><div class="faq-content-wrapper grid grid-rows-[0fr] transition-all duration-300 ease-out"><div class="faq-content overflow-hidden"><div class="pb-6 pt-2 text-muted leading-relaxed" data-zflex-bind="answer">Réponse...</div></div></div></details></template><style>/* --- VARIABLES --- */
+  .faq-wrapper {
+    --faq-border: 1px solid var(--border-color, #e5e7eb);
+    --faq-bg: var(--card-bg-color, #fff);
+    --faq-padding: 1.5rem;
+    --faq-radius: var(--border-radius, 8px);
+    --icon-color: var(--primary-color, #000);
+  }
+
+  /* --- COMMON BEHAVIOR --- */
+  .faq-summary::-webkit-details-marker {
+    display: none;
+  } /* Hide default triangle */
+
+  /* Icon Rotation */
+  details[open] .faq-icon {
+    transform: rotate(180deg);
+  }
+
+  /* The Grid Trick for smooth height animation on 'details' */
+  details[open] .faq-content-wrapper {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+  .faq-content-wrapper {
+    opacity: 0.8; /* Subtle fade effect during slide */
+  }
+
+  /* --- VARIANT: SIMPLE (Clean lines) --- */
+  .faq-wrapper.style-simple .faq-item {
+    border-bottom: var(--faq-border);
+    background: transparent;
+  }
+  .faq-wrapper.style-simple .faq-summary {
+    padding: 1.5rem 0;
+  }
+  .faq-wrapper.style-simple .faq-item:first-child {
+    border-top: var(--faq-border);
+  }
+
+  /* --- VARIANT: BOXED (Cards) --- */
+  .faq-wrapper.style-boxed {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .faq-wrapper.style-boxed .faq-item {
+    background: var(--faq-bg);
+    border: var(--faq-border);
+    border-radius: var(--faq-radius);
+    overflow: hidden; /* For radius */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .faq-wrapper.style-boxed .faq-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary-color);
+  }
+  .faq-wrapper.style-boxed .faq-summary {
+    padding: var(--faq-padding);
+  }
+  .faq-wrapper.style-boxed .faq-content {
+    padding: 0 var(--faq-padding);
+  }
+
+  /* --- VARIANT: GRID (2 Columns for Density) --- */
+  .faq-wrapper.style-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+  }
+  .faq-wrapper.style-grid .faq-item {
+    background: var(--faq-bg);
+    border: var(--faq-border);
+    border-radius: var(--faq-radius);
+    height: fit-content; /* Important for grid alignment */
+  }
+  .faq-wrapper.style-grid .faq-summary {
+    padding: 1.25rem;
+  }
+  .faq-wrapper.style-grid .faq-content {
+    padding: 0 1.25rem;
+  }
+
+  /* --- MOBILE ADJUSTMENTS --- */
+  @media (max-width: 768px) {
+    .faq-wrapper.style-grid {
+      grid-template-columns: 1fr;
+    }
+  }</style><script>// OPTIONAL: Fallback for older browsers that don't support name="faq-accordion"
+  // And to force smooth closing behavior via JS if needed (though CSS Grid handles most)
+  document.addEventListener("DOMContentLoaded", () => {
+    const details = document.querySelectorAll("details[name='faq-accordion']");
+
+    details.forEach((targetDetail) => {
+      targetDetail.addEventListener("click", () => {
+        // Close others functionality is native now with 'name' attribute
+        // But if we want to add extra logic, we do it here.
+
+        // Example: Analytics tracking on open
+        if (!targetDetail.open) {
+          console.log(
+            "FAQ Opened:",
+            targetDetail.querySelector("summary span").innerText
+          );
+        }
+      });
+    });
+  });</script></div><div data-zflex-section="finalCta" class="mb-24 last:mb-0"><div data-zflex-variant-container="finalCta"><section id="final-cta" class="final-cta-section style-split relative overflow-hidden" data-zflex-section="finalCta"><div class="absolute inset-0 z-0" data-zflex-id="finalCta.bgImage"><div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1734817427263-1e94e7f24288?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxteXN0aWNhbCUyMGZvcmVzdCUyMHBhdGglMjBmYXJtJTIwZW50cmFuY2V8ZW58MHwwfHx8MTc2ODg0MDAzNXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080');"></div><div class="absolute inset-0 bg-overlay"></div></div><div class="container relative z-10"><div class="cta-grid"><div class="cta-content reveal-on-scroll text-center md:text-left"><h2 class="section-title text-white mb-6 leading-tight" data-zflex-bind="title" data-zflex-id="finalCta.title">Votre Table Mérite la Magie de la Fraîcheur</h2><p class="section-subtitle text-white-muted text-lg mb-10 max-w-2xl mx-auto md:mx-0" data-zflex-bind="subtitle" data-zflex-id="finalCta.subtitle">Prêt à goûter la différence ?</p><div class="cta-actions flex flex-col md:flex-row gap-6"><a href="/shop" class="btn btn-primary btn-giant animate-pulse-glow" data-analytics-type="click_final_cta" data-analytics-payload="{&quot;label&quot;:&quot;Découvrir nos produits&quot;,&quot;link&quot;:&quot;/shop&quot;}" data-zflex-bind="btnText" data-zflex-id="finalCta.btnText">Découvrir nos produits <i class="fa-solid fa-arrow-right ml-2 text-sm"></i></a><div class="trust-badge flex items-center text-white-muted text-sm" style="" data-zflex-show="finalCta.showGuarantee"><i class="fa-solid fa-shield-halved text-accent mr-2 text-lg"></i> <span data-zflex-bind="guaranteeText" data-zflex-id="finalCta.guaranteeText">Fraîcheur garantie ou remboursé</span></div></div><div class="payment-icons mt-8 opacity-70 grayscale hover:grayscale-0 transition-all" style="" data-zflex-show="finalCta.showPayments"><i class="fa-brands fa-cc-visa text-2xl mx-1"></i> <i class="fa-brands fa-cc-mastercard text-2xl mx-1"></i> <i class="fa-brands fa-cc-paypal text-2xl mx-1"></i></div></div><div class="cta-visual reveal-on-scroll hidden md:block" style="transition-delay: 0.2s"><img src="https://images.unsplash.com/photo-1643864256099-0fbb9f77ebe4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwzfHxmcmVlJTIwcmFuZ2UlMjBjaGlja2VucyUyMG5hdHVyYWwlMjBsaWdodCUyMHJ1c3RpY3xlbnwwfDB8fHwxNzY4ODQwMDM1fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Final Offer" class="cta-product-shot" data-zflex-bind="productImage" data-zflex-id="finalCta.productImage"></div></div></div></section></div><template data-zflex-variant="finalCta.minimal"><section class="final-cta-section style-minimal relative overflow-hidden" data-zflex-section="finalCta"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-cover bg-center" data-zflex-bind="bgImage" data-zflex-id="finalCta.bgImage"></div><div class="absolute inset-0 bg-overlay"></div></div><div class="container relative z-10"><div class="cta-grid"><div class="cta-content text-center"><h2 class="section-title text-white mb-6" data-zflex-bind="title" data-zflex-id="finalCta.title">Titre</h2><p class="section-subtitle text-white-muted mb-10" data-zflex-bind="subtitle" data-zflex-id="finalCta.subtitle">Sous-titre</p><div class="cta-actions flex flex-col items-center gap-6"><a href="#" class="btn btn-primary btn-giant" data-zflex-bind="btnText" data-zflex-id="finalCta.btnText">Action</a><div class="trust-badge flex items-center text-white-muted text-sm" data-zflex-show="finalCta.showGuarantee"><i class="fa-solid fa-shield-halved text-accent mr-2 text-lg"></i> <span data-zflex-bind="guaranteeText" data-zflex-id="finalCta.guaranteeText">Garantie</span></div></div><div class="payment-icons mt-8 opacity-70 grayscale" data-zflex-show="finalCta.showPayments"><i class="fa-brands fa-cc-visa text-2xl mx-1"></i> <i class="fa-brands fa-cc-mastercard text-2xl mx-1"></i> <i class="fa-brands fa-cc-paypal text-2xl mx-1"></i></div></div></div></div></section></template><template data-zflex-variant="finalCta.split"><section class="final-cta-section style-split relative overflow-hidden" data-zflex-section="finalCta"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-cover bg-center" data-zflex-bind="bgImage" data-zflex-id="finalCta.bgImage"></div><div class="absolute inset-0 bg-overlay"></div></div><div class="container relative z-10"><div class="cta-grid"><div class="cta-content text-left"><h2 class="section-title text-white mb-6" data-zflex-bind="title" data-zflex-id="finalCta.title">Titre</h2><p class="section-subtitle text-white-muted mb-10" data-zflex-bind="subtitle" data-zflex-id="finalCta.subtitle">Sous-titre</p><div class="cta-actions flex flex-row gap-6"><a href="#" class="btn btn-primary btn-giant" data-zflex-bind="btnText" data-zflex-id="finalCta.btnText">Action</a><div class="trust-badge flex items-center text-white-muted text-sm" data-zflex-show="finalCta.showGuarantee"><i class="fa-solid fa-shield-halved text-accent mr-2 text-lg"></i> <span data-zflex-bind="guaranteeText" data-zflex-id="finalCta.guaranteeText">Garantie</span></div></div></div><div class="cta-visual hidden md:block"><img src="" alt="Product" class="cta-product-shot" data-zflex-bind="productImage" data-zflex-id="finalCta.productImage"></div></div></div></section></template><template data-zflex-variant="finalCta.floating"><section class="final-cta-section style-floating relative overflow-hidden" data-zflex-section="finalCta"><div class="container relative z-10"><div class="cta-grid"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-cover bg-center" data-zflex-bind="bgImage" data-zflex-id="finalCta.bgImage"></div><div class="absolute inset-0 bg-overlay"></div></div><div class="cta-content text-center relative z-10"><h2 class="section-title text-white mb-6" data-zflex-bind="title" data-zflex-id="finalCta.title">Titre</h2><p class="section-subtitle text-white-muted mb-10" data-zflex-bind="subtitle" data-zflex-id="finalCta.subtitle">Sous-titre</p><div class="cta-actions flex flex-col items-center gap-6"><a href="#" class="btn btn-primary btn-giant" data-zflex-bind="btnText" data-zflex-id="finalCta.btnText">Action</a><div class="trust-badge flex items-center text-white-muted text-sm" data-zflex-show="finalCta.showGuarantee"><i class="fa-solid fa-shield-halved text-accent mr-2 text-lg"></i> <span data-zflex-bind="guaranteeText" data-zflex-id="finalCta.guaranteeText">Garantie</span></div></div><div class="payment-icons mt-8 opacity-70 grayscale" data-zflex-show="finalCta.showPayments"><i class="fa-brands fa-cc-visa text-2xl mx-1"></i> <i class="fa-brands fa-cc-mastercard text-2xl mx-1"></i> <i class="fa-brands fa-cc-paypal text-2xl mx-1"></i></div></div></div></div></section></template><style>/* --- VARIABLES --- */
+  .final-cta-section {
+    --cta-bg: #0f172a; /* Deep dark blue/black */
+    --cta-text: #ffffff;
+    --cta-padding: 6rem 0;
+    background-color: var(--cta-bg);
+    color: var(--cta-text);
+    padding: var(--cta-padding);
+  }
+  .bg-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Darken bg image for text readability */
+  }
+  .text-white-muted {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* --- BUTTON UPGRADE --- */
+  .btn-giant {
+    font-size: 1.25rem;
+    padding: 1.25rem 3.5rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-giant:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(var(--primary-rgb), 0.6);
+  }
+
+  /* Better Pulse Animation (Glow based on primary color) */
+  @keyframes pulse-glow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(var(--primary-rgb), 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0);
+    }
+  }
+  .animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+
+  /* --- VARIANT 1: MINIMAL (Centered) --- */
+  .final-cta-section.style-minimal .cta-grid {
+    display: flex;
+    justify-content: center;
+  }
+  /* Already centered by default classes in HTML */
+
+  /* --- VARIANT 2: SPLIT (Text Left, Image Right) --- */
+  .final-cta-section.style-split .cta-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .cta-product-shot {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+    transform: rotate(3deg); /* Dynamic tilt */
+    transition: transform 0.5s;
+  }
+  .final-cta-section:hover .cta-product-shot {
+    transform: rotate(0deg) scale(1.05);
+  }
+
+  /* --- VARIANT 3: FLOATING (Card Style) --- */
+  .final-cta-section.style-floating {
+    background: var(--bg-color); /* Section is light */
+    padding: 4rem 0 6rem; /* Adjust spacing */
+  }
+  .final-cta-section.style-floating .cta-grid {
+    background: var(--cta-bg); /* Inner card is dark */
+    padding: 4rem;
+    border-radius: var(--border-radius-lg, 20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  /* Ensure the absolute bg image stays inside the rounded card */
+  .final-cta-section.style-floating .absolute.inset-0 {
+    border-radius: var(--border-radius-lg, 20px);
+  }
+  /* Center content logic for floating */
+  .final-cta-section.style-floating .cta-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* --- RESPONSIVE --- */
+  @media (max-width: 992px) {
+    .final-cta-section.style-split .cta-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .cta-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    .btn-giant {
+      width: 100%; /* Full width button on mobile = Conversion */
+    }
+    .trust-badge {
+      justify-content: center;
+    }
+    .final-cta-section.style-floating .cta-grid {
+      padding: 2.5rem 1.5rem;
+    }
+  }</style></div></main></main><footer class="focus-footer py-12 border-t" style="border-color: var(--card-border-color)"><div class="container mx-auto px-6 text-center"><div class="flex justify-center space-x-8 mb-8 text-sm opacity-70"><a href="/" class="hover:text-primary" data-analytics-type="navigate" data-analytics-payload="{&quot;to&quot;:&quot;Accueil&quot;,&quot;url&quot;:&quot;/&quot;,&quot;from&quot;:&quot;footer&quot;}">Accueil</a> <a href="/catalog" class="hover:text-primary" data-analytics-type="navigate" data-analytics-payload="{&quot;to&quot;:&quot;Catalogue&quot;,&quot;url&quot;:&quot;/catalog&quot;,&quot;from&quot;:&quot;footer&quot;}">Catalogue</a> <a href="#" class="hover:text-primary" data-analytics-type="navigate" data-analytics-payload="{&quot;to&quot;:&quot;Contact&quot;,&quot;url&quot;:&quot;#&quot;,&quot;from&quot;:&quot;footer&quot;}">Contact</a></div><div class="socials flex justify-center space-x-6 mb-8 text-xl opacity-80"></div><div class="text-sm opacity-60"><p class="mb-2"></p><p>Site propulsé par <a href="https://zflex.dev" target="_blank" class="font-bold hover:text-primary transition-colors" style="color: var(--text-color)">zFlex</a> • <button onclick="openUnsplashCredits()" class="hover:text-primary transition-colors">Crédits photos</button></p></div></div></footer><div data-stacy-fab class="fixed bottom-6 right-6 z-[1000]"><button type="button" data-stacy-fab-button aria-expanded="false" aria-controls="stacy-window" aria-label="Ouvrir le chat avec Stacy" class="w-16 h-16 rounded-full shadow-lg flex items-center justify-center transform transition-all duration-300 hover:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/50" style="background-color: var(--primary-color); color: var(--fab-foreground, #fff);" data-analytics-type="open_chat" data-analytics-payload="{}"><svg data-stacy-icon="chat" class="w-8 h-8 transition-opacity duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 5.523-4.477 10-10 10S1 17.523 1 12 5.477 2 11 2s10 4.477 10 10z"/></svg> <svg data-stacy-icon="close" class="w-8 h-8 absolute transition-opacity duration-300 opacity-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button></div><div id="stacy-window" data-stacy-window role="dialog" aria-modal="true" aria-labelledby="stacy-title" class="hidden fixed bottom-24 right-6 z-[999] w-80 max-w-[95vw] h-[32rem] max-h-[75vh] rounded-xl shadow-2xl flex flex-col" style="background-color: var(--card-bg-color); border: 1px solid var(--card-border-color);"><header class="p-4 border-b flex items-center gap-4" style="border-color: var(--card-border-color);"><div class="relative flex-shrink-0"><div class="w-10 h-10 rounded-full" style="color: var(--muted-text-color);"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="4"/><path d="M62 35C62 41.6274 56.6274 47 50 47C43.3726 47 38 41.6274 38 35C38 28.3726 43.3726 23 50 23C56.6274 23 62 28.3726 62 35Z" stroke="currentColor" stroke-width="4"/><path d="M29 82C29 70.402 38.402 61 50 61C61.598 61 71 70.402 71 82" stroke="currentColor" stroke-width="4"/></svg></div><div class="absolute bottom-0 right-0 w-3 h-3 rounded-full border-2" style="background-color: #2ecc71; border-color: var(--card-bg-color);" title="En ligne"></div></div><div class="flex-1 min-w-0"><h3 id="stacy-title" class="font-bold text-base truncate" style="color: var(--text-color);">Stacy</h3><p class="text-xs truncate" style="color: var(--muted-text-color);">Assistante virtuelle</p></div><div class="flex items-center gap-2"><button type="button" data-stacy-delete title="Supprimer la conversation et en créer une nouvelle" class="p-2 rounded-md hover:bg-gray-100 focus:outline-none" style="color: var(--muted-text-color);"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7V4a1 1 0 011-1h4a1 1 0 011 1v3"/></svg></button> <button type="button" data-stacy-compact title="Options" class="p-2 rounded-md hover:bg-gray-100 focus:outline-none" style="color: var(--muted-text-color);"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v.01M12 12v.01M12 18v.01"/></svg></button></div></header><div data-stacy-messages class="flex-1 p-4 overflow-y-auto flex flex-col gap-3" role="log" aria-live="polite"></div><footer class="p-3 border-t" style="border-color: var(--card-border-color);"><form data-stacy-form class="flex items-start gap-2" aria-label="Formulaire de chat"><label for="stacy-input" class="sr-only">Votre message</label> <textarea id="stacy-input" data-stacy-input rows="1" placeholder="Posez votre question..." class="flex-grow resize-none bg-transparent focus:outline-none p-2 text-sm w-full transition-all" style="color: var(--text-color); min-height: 40px; max-height: 120px;"></textarea> <button type="submit" data-stacy-send class="p-2 rounded-full hover:bg-primary/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 self-end" aria-label="Envoyer" style="color: var(--primary-color);" data-analytics-type="send_stacy_message" data-analytics-payload="{}"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button></form></footer></div><div id="zflex-dialog" class="fixed inset-0 z-[100] flex items-center justify-center p-4 hidden"><div id="dialog-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm"></div><div id="dialog-content" class="relative z-10 w-full max-w-sm rounded-lg shadow-2xl p-6 text-center" style="background-color: var(--card-bg-color)"><div id="dialog-icon-success" class="hidden mx-auto mb-4 w-12 h-12 rounded-full bg-green-100 flex items-center justify-center"><svg class="w-8 h-8 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><div id="dialog-icon-error" class="hidden mx-auto mb-4 w-12 h-12 rounded-full bg-red-100 flex items-center justify-center"><svg class="w-8 h-8 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg></div><div id="dialog-icon-info" class="hidden mx-auto mb-4 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center"><svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/></svg></div><h3 id="dialog-title" class="text-xl font-bold mb-2" style="color: var(--text-color)"></h3><p id="dialog-message" class="mb-6" style="color: var(--text-muted-color)"></p><div class="flex justify-center gap-3"><button id="dialog-cancel-btn" class="hidden bg-white border border-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition">Annuler</button> <button id="dialog-confirm-btn" class="bg-primary text-white font-bold py-2 px-6 rounded-lg hover:opacity-90 transition">OK</button></div></div></div><div id="unsplash-credits-dialog" class="fixed inset-0 z-[110] flex items-center justify-center p-4 hidden"><div class="fixed inset-0 bg-black/60 backdrop-blur-sm" onclick="closeUnsplashCredits()"></div><div class="relative z-10 w-full max-w-lg rounded-xl shadow-2xl p-6 overflow-hidden flex flex-col max-h-[80vh]" style="background-color: var(--card-bg-color); color: var(--text-color)"><div class="flex justify-between items-center mb-6"><h3 class="text-xl font-bold">Crédits Photos</h3><button onclick="closeUnsplashCredits()" class="p-2 hover:bg-black/5 rounded-full transition"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><div class="overflow-y-auto space-y-4 pr-2 custom-scrollbar"><div class="flex items-center gap-4 p-3 rounded-lg bg-black/5 border border-black/5"><div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-black/10 bg-white"><img src="https://images.unsplash.com/photo-1626792191569-9c9727209573?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxmcmVlJTIwcmFuZ2UlMjBjaGlja2VucyUyMG5hdHVyYWwlMjBsaWdodCUyMHJ1c3RpY3xlbnwwfDB8fHwxNzY4ODQwMDM1fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080?w=100&h=100&fit=crop" alt="Michal Pokorný" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-grow min-w-0"><p class="text-sm font-medium truncate">Photo par <a href="https://unsplash.com/@pokornymichal?utm_source=zFlex&amp;utm_medium=referral" target="_blank" class="text-primary hover:underline">Michal Pokorný</a></p><p class="text-xs opacity-60">via <span class="font-semibold">Unsplash</span></p></div></div><div class="flex items-center gap-4 p-3 rounded-lg bg-black/5 border border-black/5"><div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-black/10 bg-white"><img src="https://images.unsplash.com/photo-1604793969715-28e08acd284c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxteXN0aWNhbCUyMGZvcmVzdCUyMHBhdGglMjBmYXJtJTIwZW50cmFuY2V8ZW58MHwwfHx8MTc2ODg0MDAzNXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080?w=100&h=100&fit=crop" alt="Nick Romero" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-grow min-w-0"><p class="text-sm font-medium truncate">Photo par <a href="https://unsplash.com/@nickromero?utm_source=zFlex&amp;utm_medium=referral" target="_blank" class="text-primary hover:underline">Nick Romero</a></p><p class="text-xs opacity-60">via <span class="font-semibold">Unsplash</span></p></div></div><div class="flex items-center gap-4 p-3 rounded-lg bg-black/5 border border-black/5"><div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-black/10 bg-white"><img src="https://images.unsplash.com/photo-1597022187576-c62f63e6c2a2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxlbmNoYW50ZWQlMjBmYXJtJTIwbGFuZHNjYXBlJTIwc29mdCUyMGxpZ2h0fGVufDB8MHx8fDE3Njg4NDAwMzZ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080?w=100&h=100&fit=crop" alt="Dillon Fancher" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-grow min-w-0"><p class="text-sm font-medium truncate">Photo par <a href="https://unsplash.com/@dillonfancher?utm_source=zFlex&amp;utm_medium=referral" target="_blank" class="text-primary hover:underline">Dillon Fancher</a></p><p class="text-xs opacity-60">via <span class="font-semibold">Unsplash</span></p></div></div><div class="flex items-center gap-4 p-3 rounded-lg bg-black/5 border border-black/5"><div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-black/10 bg-white"><img src="https://images.unsplash.com/photo-1752360831997-eb7fe3686854?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwzfHxvcmdhbmljJTIwZWdncyUyMG5lc3QlMjBtYWdpY2FsJTIwZm9yZXN0fGVufDB8MHx8fDE3Njg4NDAwMzV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080?w=100&h=100&fit=crop" alt="Bernal Fallas" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-grow min-w-0"><p class="text-sm font-medium truncate">Photo par <a href="https://unsplash.com/@ingbfallas?utm_source=zFlex&amp;utm_medium=referral" target="_blank" class="text-primary hover:underline">Bernal Fallas</a></p><p class="text-xs opacity-60">via <span class="font-semibold">Unsplash</span></p></div></div><div class="flex items-center gap-4 p-3 rounded-lg bg-black/5 border border-black/5"><div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-black/10 bg-white"><img src="https://images.unsplash.com/photo-1734817427263-1e94e7f24288?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxteXN0aWNhbCUyMGZvcmVzdCUyMHBhdGglMjBmYXJtJTIwZW50cmFuY2V8ZW58MHwwfHx8MTc2ODg0MDAzNXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080?w=100&h=100&fit=crop" alt="Eric Muhr" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-grow min-w-0"><p class="text-sm font-medium truncate">Photo par <a href="https://unsplash.com/@ericmuhr?utm_source=zFlex&amp;utm_medium=referral" target="_blank" class="text-primary hover:underline">Eric Muhr</a></p><p class="text-xs opacity-60">via <span class="font-semibold">Unsplash</span></p></div></div><div class="flex items-center gap-4 p-3 rounded-lg bg-black/5 border border-black/5"><div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-black/10 bg-white"><img src="https://images.unsplash.com/photo-1643864256099-0fbb9f77ebe4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwzfHxmcmVlJTIwcmFuZ2UlMjBjaGlja2VucyUyMG5hdHVyYWwlMjBsaWdodCUyMHJ1c3RpY3xlbnwwfDB8fHwxNzY4ODQwMDM1fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080?w=100&h=100&fit=crop" alt="Kyle Lockett" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-grow min-w-0"><p class="text-sm font-medium truncate">Photo par <a href="https://unsplash.com/@kylelockett?utm_source=zFlex&amp;utm_medium=referral" target="_blank" class="text-primary hover:underline">Kyle Lockett</a></p><p class="text-xs opacity-60">via <span class="font-semibold">Unsplash</span></p></div></div><div class="flex items-center gap-4 p-3 rounded-lg bg-black/5 border border-black/5"><div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-black/10 bg-white"><img src="https://images.unsplash.com/photo-1630653200071-caddbcefdc1b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxlbmNoYW50ZWQlMjBmYXJtJTIwbGFuZHNjYXBlJTIwc29mdCUyMGxpZ2h0fGVufDB8MHx8fDE3Njg4NDAwMzZ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080?w=100&h=100&fit=crop" alt="Artem Shuba" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-grow min-w-0"><p class="text-sm font-medium truncate">Photo par <a href="https://unsplash.com/@ashuba?utm_source=zFlex&amp;utm_medium=referral" target="_blank" class="text-primary hover:underline">Artem Shuba</a></p><p class="text-xs opacity-60">via <span class="font-semibold">Unsplash</span></p></div></div><div class="flex items-center gap-4 p-3 rounded-lg bg-black/5 border border-black/5"><div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-black/10 bg-white"><img src="https://images.unsplash.com/photo-1739571676848-32f2905466ff?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxmcmVlJTIwcmFuZ2UlMjBjaGlja2VucyUyMG5hdHVyYWwlMjBsaWdodCUyMHJ1c3RpY3xlbnwwfDB8fHwxNzY4ODQwMDM1fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080?w=100&h=100&fit=crop" alt="Jaxon Devnich" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-grow min-w-0"><p class="text-sm font-medium truncate">Photo par <a href="https://unsplash.com/@jaxdev?utm_source=zFlex&amp;utm_medium=referral" target="_blank" class="text-primary hover:underline">Jaxon Devnich</a></p><p class="text-xs opacity-60">via <span class="font-semibold">Unsplash</span></p></div></div></div><div class="mt-6 text-center text-[10px] opacity-40 italic tracking-wide uppercase">Toutes les images sont utilisées sous licence Unsplash.</div></div></div><script>function openUnsplashCredits() {
+    const dialog = document.getElementById("unsplash-credits-dialog");
+    if (dialog) {
+      dialog.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+  }
+  function closeUnsplashCredits() {
+    const dialog = document.getElementById("unsplash-credits-dialog");
+    if (dialog) {
+      dialog.classList.add("hidden");
+      document.body.style.overflow = "";
+    }
+  }</script><style>.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }</style><script id="zflex-data" type="application/json">{"page":{"url":"/"},"storeId":"x2zpqwB0UiBTph2KFD4O","theme":{"themeId":"focus","headerVariant":"transparent","productCardVariant":"classic","settings":{"palette":{"background":"#F8F4E3","text":"#4A3C30","primary":"#A8D0A1","secondary":"#A67B5B","accent":"#FFDD67","cardBackground":"#FAF0E6"},"homePageSections":[],"buttons":{"style":"solid","radius":"md"},"header":{"style":"solid"},"typography":{"headingFont":"Inter"},"layout":{"borderRadius":"0.5rem"},"hero":{"headline":"Votre Titre Principal","subheadline":"Une accroche percutante pour votre produit.","image":"","videoUrl":"","ctaText":"Commander","ctaLink":"#buy"},"painPoints":{"title":"Problématique Client"},"painPoints.items":[{"icon":"fas fa-exclamation-circle","text":"Problème courant n°1"},{"icon":"fas fa-times","text":"Problème courant n°2"},{"icon":"fas fa-frown","text":"Problème courant n°3"}],"productReveal":{"imagePosition":"right","badge":"La Révolution","title":"La Solution Ultime","description":"Décrivez comment votre produit résout les problèmes mentionnés ci-dessus.","image":"","btnText":"En Savoir Plus","btnLink":"#features"},"features":{"title":"Pourquoi choisir ce produit ?","subtitle":"Mettez en avant les caractéristiques techniques ou les avantages clés."},"features.items":[{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 1"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 2"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 3"}],"testimonials":{"title":"Ils nous adorent","subtitle":"Ce que nos clients disent de nous.","source":"Avis certifiés"},"testimonials.items":[{"author":"Client Satisfait","text":"Un produit exceptionnel qui a changé mon quotidien."},{"author":"Client Fidèle","text":"Le service client est irréprochable et la qualité au rendez-vous."},{"author":"Nouvel Utilisateur","text":"Livraison rapide et produit conforme à la description."}],"howItWorks":{"title":"Comment ça marche ?","subtitle":"Les étapes clés pour profiter de votre produit.","showIcons":false},"howItWorks.steps":[{"icon":"fas fa-star","title":"Étape 1","desc":"Description de la première étape du processus."},{"icon":"fas fa-star","title":"Étape 2","desc":"Description de la deuxième étape."},{"icon":"fas fa-star","title":"Étape 3","desc":"Description de l'étape finale."}],"faq":{"accordionMode":true,"title":"FAQ","subtitle":"Tout ce que vous devez savoir."},"faq.items":[{"question":"Question Fréquente 1","answer":"Réponse détaillée à la question posée."},{"question":"Question Fréquente 2","answer":"Explication sur la politique de retour ou de garantie."},{"question":"Question Fréquente 3","answer":"Information utile sur l'utilisation du produit."}],"finalCta":{"title":"Prêt à commencer ?","subtitle":"Ne laissez pas passer cette opportunité.","btnText":"Commander Maintenant","btnLink":"#buy","showGuarantee":true,"guaranteeText":"Satisfait ou Remboursé","showPayments":false,"productImage":""},"navigation":{"showReveal":true,"labelReveal":"La Solution","showFeatures":true,"labelFeatures":"Avantages","showHowItWorks":true,"labelHowItWorks":"Fonctionnement","showTestimonials":true,"labelTestimonials":"Témoignages","showFaq":true,"labelFaq":"FAQ","showFinalCta":true,"labelFinalCta":"Commencer"},"computedPalette":{"background":"#F8F4E3","text":"#4A3C30","primary":"#A8D0A1","secondary":"#A67B5B","accent":"#FFDD67","cardBackground":"#FAF0E6","textMuted":"#b2aa9b","cardBorder":"#e5dad0","inputBackground":"#fdf8f3","chatResponseBackground":"#faf7eb","primary600":"#8fc286","primary700":"#7cb871","secondary600":"#936c50"},"computedCssVars":"--bg-color: #F8F4E3;\n  --text-color: #4A3C30;\n  --primary-color: #A8D0A1;\n  --secondary-color: #A67B5B;\n  --accent-color: #FFDD67;\n  --text-muted-color: #b2aa9b;\n  --card-bg-color: #FAF0E6;\n  --card-border-color: #e5dad0;\n  --input-bg-color: #fdf8f3;\n  --chat-response-bg-color: #faf7eb;\n  --primary-600: #8fc286;\n  --primary-700: #7cb871;\n  --secondary-600: #936c50;\n  --contrast-text-bg: 9.615617344591538;"},"version":"1.2.0","manifestUpdatedAt":{"_seconds":1768840091,"_nanoseconds":245000000},"manifest":{"settingsSchema":[{"label":"Story Arc (Structure)","type":"group","fields":[{"itemFields":[{"options":[{"label":"Hero (Intro)","value":"hero"},{"label":"Le Problème (Pain Points)","value":"painPoints"},{"label":"La Solution (Reveal)","value":"productReveal"},{"label":"Fonctionnalités","value":"features"},{"label":"Comment ça marche","value":"howItWorks"},{"label":"Avis Clients","value":"testimonials"},{"label":"FAQ","value":"faq"},{"label":"Final CTA (Closing)","value":"finalCta"}],"id":"type","label":"Type de Section","type":"select"}],"id":"homePageSections","label":"Ordre des Sections","type":"repeater"}]},{"label":"0. Global UI (Style)","type":"group","fields":[{"default":"solid","options":[{"label":"Solide (Defaut)","value":"solid"},{"label":"Contour (Outline)","value":"outline"},{"label":"Soft (Pastel)","value":"soft"}],"id":"buttons.style","label":"Style des Boutons","type":"select"},{"default":"md","options":[{"label":"Carré (0px)","value":"none"},{"label":"Léger (4px)","value":"sm"},{"label":"Standard (8px)","value":"md"},{"label":"Pilule (Full)","value":"full"}],"id":"buttons.radius","label":"Arrondi des Boutons","type":"select"},{"default":"solid","id":"header.style","label":"Style de l'En-tête","variantId":"header","type":"variant_selector"},{"default":"Inter","options":[{"label":"Inter (SaaS)","value":"Inter"},{"label":"Playfair (Luxe)","value":"Playfair Display"},{"label":"Montserrat (Bold)","value":"Montserrat"},{"label":"Oswald (Street)","value":"Oswald"}],"id":"typography.headingFont","label":"Police Titres","type":"select"},{"default":"0.5rem","options":[{"label":"Carré (0px)","value":"0px"},{"label":"Soft (8px)","value":"0.5rem"},{"label":"Round (16px)","value":"1rem"},{"label":"Extra Round (32px)","value":"2rem"}],"id":"layout.borderRadius","label":"Arrondi des cartes","type":"select"}]},{"label":"1. Hero (L'Accroche)","type":"group","fields":[{"id":"hero.style","label":"Style du Hero","variantId":"hero","type":"variant_selector"},{"default":"Votre Titre Principal","id":"hero.headline","label":"Titre Principal","type":"text"},{"default":"Une accroche percutante pour votre produit.","id":"hero.subheadline","label":"Sous-titre","type":"textarea"},{"default":"","id":"hero.image","label":"Image Hero","type":"image"},{"default":"","id":"hero.videoUrl","label":"Vidéo Background (Optionnel)","type":"text"},{"default":"Commander","id":"hero.ctaText","label":"Texte Bouton","type":"text"},{"default":"#buy","id":"hero.ctaLink","label":"Lien Bouton","type":"text"}]},{"label":"2. Pain Points (Le Problème)","type":"group","fields":[{"default":"Problématique Client","id":"painPoints.title","label":"Titre","type":"text"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"icon":"fas fa-exclamation-circle","text":"Problème courant n°1"},{"icon":"fas fa-times","text":"Problème courant n°2"},{"icon":"fas fa-frown","text":"Problème courant n°3"}],"itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}],"id":"painPoints.items","label":"Liste des problèmes","type":"repeater"}]},{"label":"3. Product Reveal (La Solution)","type":"group","fields":[{"id":"productReveal.style","label":"Style de Révélation","variantId":"productReveal","type":"variant_selector"},{"id":"productReveal.productId","label":"Produit à mettre en avant","type":"product_selector"},{"default":"right","options":[{"label":"Droite (Standard)","value":"right"},{"label":"Gauche (Alternatif)","value":"left"}],"id":"productReveal.imagePosition","label":"Position Image (Split/Overlap uniquement)","type":"select"},{"default":"La Révolution","id":"productReveal.badge","label":"Badge","type":"text"},{"default":"La Solution Ultime","id":"productReveal.title","label":"Titre","type":"text"},{"default":"Décrivez comment votre produit résout les problèmes mentionnés ci-dessus.","id":"productReveal.description","label":"Description","type":"textarea"},{"default":"","id":"productReveal.image","label":"Image Produit (Détourée)","type":"image"},{"default":"En Savoir Plus","id":"productReveal.btnText","label":"Texte Bouton (Optionnel)","type":"text"},{"default":"#features","id":"productReveal.btnLink","label":"Lien Bouton","type":"text"}]},{"label":"4. Fonctionnalités & Bénéfices","type":"group","fields":[{"id":"features.style","label":"Style d'affichage","variantId":"features","type":"variant_selector"},{"default":"Pourquoi choisir ce produit ?","id":"features.title","label":"Titre","type":"text"},{"default":"Mettez en avant les caractéristiques techniques ou les avantages clés.","id":"features.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 1"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 2"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 3"}],"itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}],"id":"features.items","label":"Liste des fonctionnalités","type":"repeater"}]},{"label":"5. Preuve Sociale (Avis)","type":"group","fields":[{"id":"testimonials.style","label":"Style d'affichage","variantId":"testimonials","type":"variant_selector"},{"default":"Ils nous adorent","id":"testimonials.title","label":"Titre de section","type":"text"},{"default":"Ce que nos clients disent de nous.","id":"testimonials.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"author":"Client Satisfait","text":"Un produit exceptionnel qui a changé mon quotidien."},{"author":"Client Fidèle","text":"Le service client est irréprochable et la qualité au rendez-vous."},{"author":"Nouvel Utilisateur","text":"Livraison rapide et produit conforme à la description."}],"itemFields":[{"id":"author","label":"Auteur","type":"text"},{"id":"text","label":"Avis","type":"textarea"}],"id":"testimonials.items","label":"Avis Clients","type":"repeater"},{"default":"Avis certifiés","id":"testimonials.source","label":"Source (ex: Trustpilot)","type":"text"}]},{"label":"6. How It Works (Timeline)","type":"group","fields":[{"id":"howItWorks.style","label":"Style","variantId":"howItWorks","type":"variant_selector"},{"default":"Comment ça marche ?","id":"howItWorks.title","label":"Titre","type":"text"},{"default":"Les étapes clés pour profiter de votre produit.","id":"howItWorks.subtitle","label":"Sous-titre","type":"text"},{"default":false,"id":"howItWorks.showIcons","label":"Utiliser des icônes au lieu de chiffres ?","type":"boolean"},{"default":[{"icon":"fas fa-star","title":"Étape 1","desc":"Description de la première étape du processus."},{"icon":"fas fa-star","title":"Étape 2","desc":"Description de la deuxième étape."},{"icon":"fas fa-star","title":"Étape 3","desc":"Description de l'étape finale."}],"itemFields":[{"id":"title","label":"Titre étape","type":"text"},{"id":"desc","label":"Description","type":"textarea"},{"id":"icon","label":"Icône SVG/FontAwesome (Si mode icône activé)","type":"textarea"}],"id":"howItWorks.steps","label":"Étapes","type":"repeater"}]},{"label":"7. FAQ","type":"group","fields":[{"id":"faq.style","label":"Style FAQ","variantId":"faq","type":"variant_selector"},{"default":true,"id":"faq.accordionMode","label":"Mode Accordéon (Ferme les autres auto)","type":"boolean"},{"default":"FAQ","id":"faq.title","label":"Titre","type":"text"},{"default":"Tout ce que vous devez savoir.","id":"faq.subtitle","label":"Sous-titre","type":"text"},{"default":[{"question":"Question Fréquente 1","answer":"Réponse détaillée à la question posée."},{"question":"Question Fréquente 2","answer":"Explication sur la politique de retour ou de garantie."},{"question":"Question Fréquente 3","answer":"Information utile sur l'utilisation du produit."}],"itemFields":[{"id":"question","label":"Question","type":"text"},{"id":"answer","label":"Réponse","type":"textarea"}],"id":"faq.items","label":"Questions","type":"repeater"}]},{"label":"8. Final CTA (Le Closing)","type":"group","fields":[{"id":"finalCta.style","label":"Style CTA","variantId":"finalCta","type":"variant_selector"},{"id":"finalCta.bgImage","label":"Image de fond (Optionnel)","type":"image"},{"default":"Prêt à commencer ?","id":"finalCta.title","label":"Titre","type":"text"},{"default":"Ne laissez pas passer cette opportunité.","id":"finalCta.subtitle","label":"Sous-titre","type":"textarea"},{"default":"Commander Maintenant","id":"finalCta.btnText","label":"Texte Bouton","type":"text"},{"default":"#buy","id":"finalCta.btnLink","label":"Lien Bouton","type":"text"},{"default":true,"id":"finalCta.showGuarantee","label":"Afficher Garantie","type":"boolean"},{"default":"Satisfait ou Remboursé","id":"finalCta.guaranteeText","label":"Texte Garantie","type":"text"},{"default":false,"id":"finalCta.showPayments","label":"Afficher Logos Paiement","type":"boolean"},{"default":"","id":"finalCta.productImage","label":"Image Produit (Pour style Split)","type":"image"}]},{"label":"9. Menu de Navigation (Ancres)","type":"group","fields":[{"default":true,"id":"navigation.showReveal","label":"Afficher 'La Solution'","type":"boolean"},{"default":"La Solution","id":"navigation.labelReveal","label":"Libellé 'La Solution'","type":"text"},{"default":true,"id":"navigation.showFeatures","label":"Afficher 'Avantages'","type":"boolean"},{"default":"Avantages","id":"navigation.labelFeatures","label":"Libellé 'Avantages'","type":"text"},{"default":true,"id":"navigation.showHowItWorks","label":"Afficher 'Fonctionnement'","type":"boolean"},{"default":"Fonctionnement","id":"navigation.labelHowItWorks","label":"Libellé 'Fonctionnement'","type":"text"},{"default":true,"id":"navigation.showTestimonials","label":"Afficher 'Témoignages'","type":"boolean"},{"default":"Témoignages","id":"navigation.labelTestimonials","label":"Libellé 'Témoignages'","type":"text"},{"default":true,"id":"navigation.showFaq","label":"Afficher 'FAQ'","type":"boolean"},{"default":"FAQ","id":"navigation.labelFaq","label":"Libellé 'FAQ'","type":"text"},{"default":true,"id":"navigation.showFinalCta","label":"Afficher 'Commencer'","type":"boolean"},{"default":"Commencer","id":"navigation.labelFinalCta","label":"Libellé 'Commencer'","type":"text"}]},{"label":"Palette & Branding","type":"group","fields":[{"default":"#000000","id":"palette.primary","label":"Primaire (Brand)","type":"color"},{"default":"#f3f4f6","id":"palette.secondary","label":"Secondaire","type":"color"},{"default":"#3b82f6","id":"palette.accent","label":"Accent (Highlights)","type":"color"},{"default":"#ffffff","id":"palette.background","label":"Fond Page","type":"color"},{"default":"#1f2937","id":"palette.text","label":"Texte Principal","type":"color"},{"default":"#ffffff","id":"palette.cardBackground","label":"Fond Cartes","type":"color"}]}],"author":"zFlex Team","name":"Focus","magicSuggestions":[{"label":"🎬 Impact Cinéma","prompt":"Capte l'attention dès la première seconde avec une présentation plein écran immersive et un message fort qui plonge mes visiteurs dans l'univers de ma marque."},{"label":"🤝 Preuve Sociale","prompt":"Entoure mon produit de visages et d'avis clients convaincants disposés de manière dynamique pour montrer que ma communauté m'adore."},{"label":"🌙 Nuit Étoilée","prompt":"Transforme ma boutique en un écrin de luxe : bascule sur un thème sombre et élégant qui fait briller mon produit comme s'il était sous les projecteurs."},{"label":"� Storyline Parfaite","prompt":"Raconte mon aventure dans le bon ordre : commence par le problème que je résous, montre ma solution révolutionnaire et termine par mes plus grands avantages."},{"label":"🚀 Vente Flash","prompt":"Crée un sentiment d'urgence irrésistible avec un appel à l'action flottant en fin de page et explique mon processus en quelques étapes simples et graphiques."}],"description":"Un produit. Une histoire. Une conversion. Le template ultime pour le storytelling immersif. Le theme supporte aussi le multiproduct avec son catalogue integre","variants":{"features":[{"description":"Alternance texte/image pour rythmer la lecture.","id":"zigzag","label":"Zig-Zag Story"},{"description":"Vue d'ensemble rapide des points forts.","id":"cards","label":"Grille d'Avantages"},{"description":"Idéal pour les spécifications techniques.","id":"list","label":"Liste Détaillée"}],"testimonials":[{"description":"Défilement horizontal des avis.","id":"carousel","label":"Carrousel Classique"},{"description":"Mosaïque d'avis pour une preuve sociale massive.","id":"grid","label":"Wall of Love (Grille)"},{"description":"Mise en avant d'un témoignage clé ou d'un ambassadeur.","id":"spotlight","label":"Spotlight (Citation unique)"}],"howItWorks":[{"description":"Parcours séquentiel avec ligne directrice (1->2->3).","id":"timeline","label":"Timeline Connectée"},{"description":"Étapes affichées sous forme de grille modulaire.","id":"cards","label":"Cartes Indépendantes"}],"productReveal":[{"description":"Mise en lumière dramatique, idéal pour les lancements.","id":"spotlight","label":"Spotlight (Central)"},{"description":"Image et texte se répondent pour expliquer le produit.","id":"split","label":"Split Story (Côté à Côté)"},{"description":"Design moderne avec chevauchement pour un effet premium.","id":"overlap","label":"Overlap (Profondeur 3D)"}],"faq":[{"description":"Lignes épurées, style éditorial.","id":"simple","label":"Liste Minimaliste"},{"description":"Chaque question est encapsulée (Standard SaaS).","id":"boxed","label":"Boxed (Cartes)"},{"description":"Double colonne pour les FAQ volumineuses.","id":"grid","label":"Grille Dense"}],"header":[{"description":"Fond opaque avec flou de précision dès le chargement.","id":"solid","label":"Fixe (Solide)"},{"description":"Fusionne avec le Hero au repos, devient solide au scroll.","id":"transparent","label":"Transparent (Auto)"}],"hero":[{"description":"Immersion totale avec arrière-plan média plein écran.","id":"cinematic","label":"Cinématique (Vidéo/Image Full)"},{"description":"Équilibre parfait entre visuel produit et accroche textuelle.","id":"split","label":"Split Screen"},{"description":"Focus absolu sur la typographie et le message.","id":"minimal","label":"Minimaliste"}],"finalCta":[{"description":"Juste l'essentiel pour closer.","id":"minimal","label":"Minimaliste Centré"},{"description":"Rappel du produit à côté de l'appel à l'action.","id":"split","label":"Split Visuel"},{"description":"Effet 'Pop-up' intégré pour une attention maximale.","id":"floating","label":"Carte Flottante"}]},"version":"1.2.0"},"variants":{"features":[{"description":"Alternance texte/image pour rythmer la lecture.","id":"zigzag","label":"Zig-Zag Story"},{"description":"Vue d'ensemble rapide des points forts.","id":"cards","label":"Grille d'Avantages"},{"description":"Idéal pour les spécifications techniques.","id":"list","label":"Liste Détaillée"}],"testimonials":[{"description":"Défilement horizontal des avis.","id":"carousel","label":"Carrousel Classique"},{"description":"Mosaïque d'avis pour une preuve sociale massive.","id":"grid","label":"Wall of Love (Grille)"},{"description":"Mise en avant d'un témoignage clé ou d'un ambassadeur.","id":"spotlight","label":"Spotlight (Citation unique)"}],"howItWorks":[{"description":"Parcours séquentiel avec ligne directrice (1->2->3).","id":"timeline","label":"Timeline Connectée"},{"description":"Étapes affichées sous forme de grille modulaire.","id":"cards","label":"Cartes Indépendantes"}],"productReveal":[{"description":"Mise en lumière dramatique, idéal pour les lancements.","id":"spotlight","label":"Spotlight (Central)"},{"description":"Image et texte se répondent pour expliquer le produit.","id":"split","label":"Split Story (Côté à Côté)"},{"description":"Design moderne avec chevauchement pour un effet premium.","id":"overlap","label":"Overlap (Profondeur 3D)"}],"faq":[{"description":"Lignes épurées, style éditorial.","id":"simple","label":"Liste Minimaliste"},{"description":"Chaque question est encapsulée (Standard SaaS).","id":"boxed","label":"Boxed (Cartes)"},{"description":"Double colonne pour les FAQ volumineuses.","id":"grid","label":"Grille Dense"}],"header":[{"description":"Fond opaque avec flou de précision dès le chargement.","id":"solid","label":"Fixe (Solide)"},{"description":"Fusionne avec le Hero au repos, devient solide au scroll.","id":"transparent","label":"Transparent (Auto)"}],"hero":[{"description":"Immersion totale avec arrière-plan média plein écran.","id":"cinematic","label":"Cinématique (Vidéo/Image Full)"},{"description":"Équilibre parfait entre visuel produit et accroche textuelle.","id":"split","label":"Split Screen"},{"description":"Focus absolu sur la typographie et le message.","id":"minimal","label":"Minimaliste"}],"finalCta":[{"description":"Juste l'essentiel pour closer.","id":"minimal","label":"Minimaliste Centré"},{"description":"Rappel du produit à côté de l'appel à l'action.","id":"split","label":"Split Visuel"},{"description":"Effet 'Pop-up' intégré pour une attention maximale.","id":"floating","label":"Carte Flottante"}]},"settingsSchema":[{"label":"Story Arc (Structure)","type":"group","fields":[{"itemFields":[{"options":[{"label":"Hero (Intro)","value":"hero"},{"label":"Le Problème (Pain Points)","value":"painPoints"},{"label":"La Solution (Reveal)","value":"productReveal"},{"label":"Fonctionnalités","value":"features"},{"label":"Comment ça marche","value":"howItWorks"},{"label":"Avis Clients","value":"testimonials"},{"label":"FAQ","value":"faq"},{"label":"Final CTA (Closing)","value":"finalCta"}],"id":"type","label":"Type de Section","type":"select"}],"id":"homePageSections","label":"Ordre des Sections","type":"repeater"}]},{"label":"0. Global UI (Style)","type":"group","fields":[{"default":"solid","options":[{"label":"Solide (Defaut)","value":"solid"},{"label":"Contour (Outline)","value":"outline"},{"label":"Soft (Pastel)","value":"soft"}],"id":"buttons.style","label":"Style des Boutons","type":"select"},{"default":"md","options":[{"label":"Carré (0px)","value":"none"},{"label":"Léger (4px)","value":"sm"},{"label":"Standard (8px)","value":"md"},{"label":"Pilule (Full)","value":"full"}],"id":"buttons.radius","label":"Arrondi des Boutons","type":"select"},{"default":"solid","id":"header.style","label":"Style de l'En-tête","variantId":"header","type":"variant_selector"},{"default":"Inter","options":[{"label":"Inter (SaaS)","value":"Inter"},{"label":"Playfair (Luxe)","value":"Playfair Display"},{"label":"Montserrat (Bold)","value":"Montserrat"},{"label":"Oswald (Street)","value":"Oswald"}],"id":"typography.headingFont","label":"Police Titres","type":"select"},{"default":"0.5rem","options":[{"label":"Carré (0px)","value":"0px"},{"label":"Soft (8px)","value":"0.5rem"},{"label":"Round (16px)","value":"1rem"},{"label":"Extra Round (32px)","value":"2rem"}],"id":"layout.borderRadius","label":"Arrondi des cartes","type":"select"}]},{"label":"1. Hero (L'Accroche)","type":"group","fields":[{"id":"hero.style","label":"Style du Hero","variantId":"hero","type":"variant_selector"},{"default":"Votre Titre Principal","id":"hero.headline","label":"Titre Principal","type":"text"},{"default":"Une accroche percutante pour votre produit.","id":"hero.subheadline","label":"Sous-titre","type":"textarea"},{"default":"","id":"hero.image","label":"Image Hero","type":"image"},{"default":"","id":"hero.videoUrl","label":"Vidéo Background (Optionnel)","type":"text"},{"default":"Commander","id":"hero.ctaText","label":"Texte Bouton","type":"text"},{"default":"#buy","id":"hero.ctaLink","label":"Lien Bouton","type":"text"}]},{"label":"2. Pain Points (Le Problème)","type":"group","fields":[{"default":"Problématique Client","id":"painPoints.title","label":"Titre","type":"text"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"icon":"fas fa-exclamation-circle","text":"Problème courant n°1"},{"icon":"fas fa-times","text":"Problème courant n°2"},{"icon":"fas fa-frown","text":"Problème courant n°3"}],"itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}],"id":"painPoints.items","label":"Liste des problèmes","type":"repeater"}]},{"label":"3. Product Reveal (La Solution)","type":"group","fields":[{"id":"productReveal.style","label":"Style de Révélation","variantId":"productReveal","type":"variant_selector"},{"id":"productReveal.productId","label":"Produit à mettre en avant","type":"product_selector"},{"default":"right","options":[{"label":"Droite (Standard)","value":"right"},{"label":"Gauche (Alternatif)","value":"left"}],"id":"productReveal.imagePosition","label":"Position Image (Split/Overlap uniquement)","type":"select"},{"default":"La Révolution","id":"productReveal.badge","label":"Badge","type":"text"},{"default":"La Solution Ultime","id":"productReveal.title","label":"Titre","type":"text"},{"default":"Décrivez comment votre produit résout les problèmes mentionnés ci-dessus.","id":"productReveal.description","label":"Description","type":"textarea"},{"default":"","id":"productReveal.image","label":"Image Produit (Détourée)","type":"image"},{"default":"En Savoir Plus","id":"productReveal.btnText","label":"Texte Bouton (Optionnel)","type":"text"},{"default":"#features","id":"productReveal.btnLink","label":"Lien Bouton","type":"text"}]},{"label":"4. Fonctionnalités & Bénéfices","type":"group","fields":[{"id":"features.style","label":"Style d'affichage","variantId":"features","type":"variant_selector"},{"default":"Pourquoi choisir ce produit ?","id":"features.title","label":"Titre","type":"text"},{"default":"Mettez en avant les caractéristiques techniques ou les avantages clés.","id":"features.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 1"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 2"},{"image":"","description":"Détail technique ou bénéfice utilisateur.","title":"Caractéristique 3"}],"itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}],"id":"features.items","label":"Liste des fonctionnalités","type":"repeater"}]},{"label":"5. Preuve Sociale (Avis)","type":"group","fields":[{"id":"testimonials.style","label":"Style d'affichage","variantId":"testimonials","type":"variant_selector"},{"default":"Ils nous adorent","id":"testimonials.title","label":"Titre de section","type":"text"},{"default":"Ce que nos clients disent de nous.","id":"testimonials.subtitle","label":"Sous-titre","type":"textarea"},{"default":[{"author":"Client Satisfait","text":"Un produit exceptionnel qui a changé mon quotidien."},{"author":"Client Fidèle","text":"Le service client est irréprochable et la qualité au rendez-vous."},{"author":"Nouvel Utilisateur","text":"Livraison rapide et produit conforme à la description."}],"itemFields":[{"id":"author","label":"Auteur","type":"text"},{"id":"text","label":"Avis","type":"textarea"}],"id":"testimonials.items","label":"Avis Clients","type":"repeater"},{"default":"Avis certifiés","id":"testimonials.source","label":"Source (ex: Trustpilot)","type":"text"}]},{"label":"6. How It Works (Timeline)","type":"group","fields":[{"id":"howItWorks.style","label":"Style","variantId":"howItWorks","type":"variant_selector"},{"default":"Comment ça marche ?","id":"howItWorks.title","label":"Titre","type":"text"},{"default":"Les étapes clés pour profiter de votre produit.","id":"howItWorks.subtitle","label":"Sous-titre","type":"text"},{"default":false,"id":"howItWorks.showIcons","label":"Utiliser des icônes au lieu de chiffres ?","type":"boolean"},{"default":[{"icon":"fas fa-star","title":"Étape 1","desc":"Description de la première étape du processus."},{"icon":"fas fa-star","title":"Étape 2","desc":"Description de la deuxième étape."},{"icon":"fas fa-star","title":"Étape 3","desc":"Description de l'étape finale."}],"itemFields":[{"id":"title","label":"Titre étape","type":"text"},{"id":"desc","label":"Description","type":"textarea"},{"id":"icon","label":"Icône SVG/FontAwesome (Si mode icône activé)","type":"textarea"}],"id":"howItWorks.steps","label":"Étapes","type":"repeater"}]},{"label":"7. FAQ","type":"group","fields":[{"id":"faq.style","label":"Style FAQ","variantId":"faq","type":"variant_selector"},{"default":true,"id":"faq.accordionMode","label":"Mode Accordéon (Ferme les autres auto)","type":"boolean"},{"default":"FAQ","id":"faq.title","label":"Titre","type":"text"},{"default":"Tout ce que vous devez savoir.","id":"faq.subtitle","label":"Sous-titre","type":"text"},{"default":[{"question":"Question Fréquente 1","answer":"Réponse détaillée à la question posée."},{"question":"Question Fréquente 2","answer":"Explication sur la politique de retour ou de garantie."},{"question":"Question Fréquente 3","answer":"Information utile sur l'utilisation du produit."}],"itemFields":[{"id":"question","label":"Question","type":"text"},{"id":"answer","label":"Réponse","type":"textarea"}],"id":"faq.items","label":"Questions","type":"repeater"}]},{"label":"8. Final CTA (Le Closing)","type":"group","fields":[{"id":"finalCta.style","label":"Style CTA","variantId":"finalCta","type":"variant_selector"},{"id":"finalCta.bgImage","label":"Image de fond (Optionnel)","type":"image"},{"default":"Prêt à commencer ?","id":"finalCta.title","label":"Titre","type":"text"},{"default":"Ne laissez pas passer cette opportunité.","id":"finalCta.subtitle","label":"Sous-titre","type":"textarea"},{"default":"Commander Maintenant","id":"finalCta.btnText","label":"Texte Bouton","type":"text"},{"default":"#buy","id":"finalCta.btnLink","label":"Lien Bouton","type":"text"},{"default":true,"id":"finalCta.showGuarantee","label":"Afficher Garantie","type":"boolean"},{"default":"Satisfait ou Remboursé","id":"finalCta.guaranteeText","label":"Texte Garantie","type":"text"},{"default":false,"id":"finalCta.showPayments","label":"Afficher Logos Paiement","type":"boolean"},{"default":"","id":"finalCta.productImage","label":"Image Produit (Pour style Split)","type":"image"}]},{"label":"9. Menu de Navigation (Ancres)","type":"group","fields":[{"default":true,"id":"navigation.showReveal","label":"Afficher 'La Solution'","type":"boolean"},{"default":"La Solution","id":"navigation.labelReveal","label":"Libellé 'La Solution'","type":"text"},{"default":true,"id":"navigation.showFeatures","label":"Afficher 'Avantages'","type":"boolean"},{"default":"Avantages","id":"navigation.labelFeatures","label":"Libellé 'Avantages'","type":"text"},{"default":true,"id":"navigation.showHowItWorks","label":"Afficher 'Fonctionnement'","type":"boolean"},{"default":"Fonctionnement","id":"navigation.labelHowItWorks","label":"Libellé 'Fonctionnement'","type":"text"},{"default":true,"id":"navigation.showTestimonials","label":"Afficher 'Témoignages'","type":"boolean"},{"default":"Témoignages","id":"navigation.labelTestimonials","label":"Libellé 'Témoignages'","type":"text"},{"default":true,"id":"navigation.showFaq","label":"Afficher 'FAQ'","type":"boolean"},{"default":"FAQ","id":"navigation.labelFaq","label":"Libellé 'FAQ'","type":"text"},{"default":true,"id":"navigation.showFinalCta","label":"Afficher 'Commencer'","type":"boolean"},{"default":"Commencer","id":"navigation.labelFinalCta","label":"Libellé 'Commencer'","type":"text"}]},{"label":"Palette & Branding","type":"group","fields":[{"default":"#000000","id":"palette.primary","label":"Primaire (Brand)","type":"color"},{"default":"#f3f4f6","id":"palette.secondary","label":"Secondaire","type":"color"},{"default":"#3b82f6","id":"palette.accent","label":"Accent (Highlights)","type":"color"},{"default":"#ffffff","id":"palette.background","label":"Fond Page","type":"color"},{"default":"#1f2937","id":"palette.text","label":"Texte Principal","type":"color"},{"default":"#ffffff","id":"palette.cardBackground","label":"Fond Cartes","type":"color"}]}],"baseTemplate":"focus"},"apiEndpoints":{"stacy":"http://127.0.0.1:5001/zflex-wizard/us-central1/askStacyApi","resumeConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/resumeConversationApi","createConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/createConversationApi","continueConv":"http://127.0.0.1:5001/zflex-wizard/us-central1/continueConversationApi","createOrder":"http://127.0.0.1:5001/zflex-wizard/us-central1/createOrderApi","subscribeToNewsletter":"http://127.0.0.1:5001/zflex-wizard/us-central1/subscribeToNewsletterApi","submitReview":"http://127.0.0.1:5001/zflex-wizard/us-central1/submitReviewApi","getOrderDetails":"http://127.0.0.1:5001/zflex-wizard/us-central1/getOrderApi","trackEvent":"http://127.0.0.1:5001/zflex-wizard/us-central1/tracker","initiatePayment":"http://127.0.0.1:5001/zflex-wizard/us-central1/initiatePayment","getOrderStatusApi":"http://127.0.0.1:5001/zflex-wizard/us-central1/getOrderStatusApi","getProspectInfo":"http://127.0.0.1:5001/zflex-wizard/us-central1/getProspectInfo"}}</script><script src="/assets/app-BY73wLkG.js" type="module"></script><div id="sticky-cta" class="sticky-cta hidden fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 flex items-center gap-4 p-2 pr-2 pl-2 md:pl-3 bg-white/80 backdrop-blur-lg rounded-full shadow-2xl border border-white/20 transition-all duration-500" style="max-width: 90vw"><div class="w-12 h-12 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 bg-white shadow-sm"><img src="https://placehold.co/800x600?text=Wizard%20Farmers%20de%20d%C3%A9monstration%204" class="w-full h-full object-cover" alt="Wizard Farmers de démonstration 4"></div><div class="hidden md:flex flex-col mr-2"><span class="text-xs text-gray-500 uppercase font-bold tracking-wider">default</span> <span class="text-sm font-bold text-gray-900 leading-tight">Wizard Farmers de démonstration 4</span></div><a href="/catalog" class="btn btn-primary rounded-full px-6 py-3 text-sm font-bold shadow-lg hover:shadow-xl transition-all whitespace-nowrap">Voir Collection</a></div></body></html>
